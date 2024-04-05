@@ -1,0 +1,165 @@
+/*   Responsive Css  */  
+
+@media screen and (min-width: 768px){
+     
+}
+ 
+@media screen and (min-width: 992px){
+
+.fixdNav {
+    display: none;
+}
+.main-navigation ul > li:last-child > a {
+    padding-right: 0;
+}
+.main_nav_top ul li.current_page_item > a {
+    font-weight: 700; 
+    color: #6274e7; 
+}
+.main_nav_top {
+    margin-bottom: 30px;
+} 
+.main-navigation ul > li > a:hover, .oisHeader .mainNav_right ul li a:hover {
+    text-decoration: none;
+    color: #6274e7;
+} 
+.main_nav_top ul li.hasMenu > a {
+    position: relative;
+/*
+    padding-top: 30px;
+    padding-bottom: 30px;
+*/
+    margin-right: 10px;
+}
+.main_nav_top ul li.hasMenu > a:after {
+    content: '';
+    border: 2px solid #6274e7;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    right: 10px;
+    border-top: 0;
+    border-left: 0;
+    transform: rotate(45deg) translateY(-50%);
+    top: 50%;
+    margin-top: -4px;
+} 
+    
+}
+
+@media screen and ( min-width: 1200px ) {
+
+.container {
+    max-width: 1665px;
+    padding-left: 150px;
+    padding-right: 150px;
+}  
+p {
+    margin-bottom: 15px; 
+} 
+    
+}    
+
+@media screen and ( max-width: 1199px ){
+  
+.container{
+    max-width: 100%;
+    padding: 0 35px;
+}
+.padd-row, footer.footer {
+    padding: 80px 0;
+}
+.cmnPadd{
+    padding: 100px 0;
+}
+body, .cmn_accordion .card .card-header h5 {
+    font-size: 17px;
+} 
+.header{
+    padding: 0;  
+}
+.header_main {
+    padding: 20px 0;
+}
+.logo img {
+    width: 145px;
+}
+.logo .logotxt {
+    font-size: 14px; 
+    margin-top: 2px;
+}
+.main-navigation ul > li > a {
+    font-size: 16px;
+} 
+    
+} 
+
+@media ( min-width: 991px ) and ( max-width: 1199px ) {
+    
+.main-navigation ul > li > a {
+    padding-left: 5px;
+    padding-right: 5px;
+} 
+    
+}
+ 
+@media screen and (max-width: 991px) {
+    
+.container{ 
+    padding: 0 25px;
+} 
+.padd-row  {
+    padding: 70px 0;
+}
+.cmnPadd{
+    padding: 70px 0;
+} 
+    
+} 
+
+@media ( min-width: 768px ) and ( max-width: 991px ) { 
+    
+} 
+
+@media screen and ( max-width: 767px ){
+    
+body {
+    overflow-x: hidden;
+}
+body, .cmn_accordion .card .card-header h5 {
+    font-size: 14px;
+}
+.bodyWrap .padd-row{
+    padding: 55px 0;
+}
+.cmnPadd{
+    padding: 60px 0;
+}
+.bodyWrap .main-heading h1{
+    font-size: 32px;
+}
+.bodyWrap h2, .bodyWrap .main-heading h2, .bodyWrap .main-heading h2.askan_txt, .bodyWrap h2.askan_txt {
+    font-size: 28px;
+}
+.bodyWrap, .bodyWrap p {
+    font-size: 14px;
+}
+.main-heading h2, h2 {
+    font-size: 28px;
+}
+.main-heading h2.askan_txt, h2.askan_txt {
+    font-size: 35px;
+} 
+footer.footer { 
+    padding: 45px 0;
+    font-size: 14px;
+    background-position: bottom right;
+}
+.ftrMain [ class*='col-' ] {
+    margin-bottom: 40px;
+} 
+.ftrMain [ class*='col-' ]:last-child {
+    margin-bottom: 0;
+} 
+    
+}  

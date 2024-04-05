@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'RecifeDisplay';
+    src: url('../fonts/RecifeDisplay-Regular.eot');
+    src: url('../fonts/RecifeDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RecifeDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/RecifeDisplay-Regular.woff') format('woff'),
+        url('../fonts/RecifeDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RecifeText-Light';
+    src: url('../fonts/RecifeText-Light.eot');
+    src: url('../fonts/RecifeText-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RecifeText-Light.woff2') format('woff2'),
+        url('../fonts/RecifeText-Light.woff') format('woff'),
+        url('../fonts/RecifeText-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RecifeDisplay-Light';
+    src: url('../fonts/RecifeDisplay-Light.eot');
+    src: url('../fonts/RecifeDisplay-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RecifeDisplay-Light.woff2') format('woff2'),
+        url('../fonts/RecifeDisplay-Light.woff') format('woff'),
+        url('../fonts/RecifeDisplay-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Askan-Medium';
+    src: url('../fonts/Askan-Medium.eot');
+    src: url('../fonts/Askan-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Askan-Medium.woff2') format('woff2'),
+        url('../fonts/Askan-Medium.woff') format('woff'),
+        url('../fonts/Askan-Medium.ttf') format('truetype'),
+        url('../fonts/Askan-Medium.svg#Askan-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Askan-Italic';
+    src: url('../fonts/Askan-Italic.eot');
+    src: url('../fonts/Askan-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Askan-Italic.woff2') format('woff2'),
+        url('../fonts/Askan-Italic.woff') format('woff'),
+        url('../fonts/Askan-Italic.ttf') format('truetype'),
+        url('../fonts/Askan-Italic.svg#Askan-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Askan-Regular';
+    src: url('../fonts/Askan-Regular.eot');
+    src: url('../fonts/Askan-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Askan-Regular.woff2') format('woff2'),
+        url('../fonts/Askan-Regular.woff') format('woff'),
+        url('../fonts/Askan-Regular.ttf') format('truetype'),
+        url('../fonts/Askan-Regular.svg#Askan-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'WorkSans-Italic';
+    src: url('../fonts/WorkSans-Italic.eot');
+    src: url('../fonts/WorkSans-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/WorkSans-Italic.woff2') format('woff2'),
+        url('../fonts/WorkSans-Italic.woff') format('woff'),
+        url('../fonts/WorkSans-Italic.ttf') format('truetype'),
+        url('../fonts/WorkSans-Italic.svg#WorkSans-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'WorkSans-SemiBold';
+    src: url('../fonts/WorkSans-SemiBold.eot');
+    src: url('../fonts/WorkSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/WorkSans-SemiBold.woff2') format('woff2'),
+        url('../fonts/WorkSans-SemiBold.woff') format('woff'),
+        url('../fonts/WorkSans-SemiBold.ttf') format('truetype'),
+        url('../fonts/WorkSans-SemiBold.svg#WorkSans-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'WorkSans-Regular';
+    src: url('../fonts/WorkSans-Regular.eot');
+    src: url('../fonts/WorkSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/WorkSans-Regular.woff2') format('woff2'),
+        url('../fonts/WorkSans-Regular.woff') format('woff'),
+        url('../fonts/WorkSans-Regular.ttf') format('truetype'),
+        url('../fonts/WorkSans-Regular.svg#WorkSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'WorkSans-Medium';
+    src: url('../fonts/WorkSans-Medium.eot');
+    src: url('../fonts/WorkSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/WorkSans-Medium.woff2') format('woff2'),
+        url('../fonts/WorkSans-Medium.woff') format('woff'),
+        url('../fonts/WorkSans-Medium.ttf') format('truetype'),
+        url('../fonts/WorkSans-Medium.svg#WorkSans-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'WorkSans-Bold';
+    src: url('../fonts/WorkSans-Bold.eot');
+    src: url('../fonts/WorkSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/WorkSans-Bold.woff2') format('woff2'),
+        url('../fonts/WorkSans-Bold.woff') format('woff'),
+        url('../fonts/WorkSans-Bold.ttf') format('truetype'),
+        url('../fonts/WorkSans-Bold.svg#WorkSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
