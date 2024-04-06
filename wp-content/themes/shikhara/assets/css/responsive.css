@@ -60,6 +60,24 @@ p {
     
 }    
 
+@media screen and (max-width: 1599px) {
+    
+.coming_soon_wrapper {
+    padding: 100px 50px;
+    background-size: 80% auto;
+}
+.coming_soon_wrapper .website_logo img {
+    max-width: 300px;
+}
+.coming_soon_wrapper .coming_soon_content {
+    margin-top: 120px;
+}
+.coming_soon_wrapper .coming_soon_content h1 {
+    font-size: 85px;
+} 
+    
+}
+
 @media screen and ( max-width: 1199px ){
   
 .container{
@@ -114,6 +132,23 @@ body, .cmn_accordion .card .card-header h5 {
 .cmnPadd{
     padding: 70px 0;
 } 
+.coming_soon_wrapper {
+    padding: 120px 50px;
+    background-size: 85% auto;
+}
+.coming_soon_wrapper .website_logo img {
+    max-width: 250px;
+}
+.coming_soon_wrapper .coming_soon_content {
+    margin-top: 100px;
+}
+.coming_soon_wrapper .coming_soon_content h1 {
+    font-size: 65px;
+}
+.coming_soon_wrapper .coming_soon_content p,
+.coming_soon_wrapper .coming_soon_content p a {
+    font-size: 12px;
+}
     
 } 
 
@@ -160,6 +195,27 @@ footer.footer {
 } 
 .ftrMain [ class*='col-' ]:last-child {
     margin-bottom: 0;
+} 
+html, body, .coming_soon_wrapper{
+    height: 100%;
+}
+.coming_soon_wrapper {
+    padding: 100px 20px;
+    background-size: 100% auto;
+}
+.coming_soon_wrapper .website_logo img {
+    max-width: 280px;
+}
+.coming_soon_wrapper .coming_soon_content {
+    margin-top: 100px;
+}
+.coming_soon_wrapper .coming_soon_content h1 {
+    font-size: 52px;
+}
+.coming_soon_wrapper .coming_soon_content p,
+.coming_soon_wrapper .coming_soon_content p a {
+    font-size: 11px;
+    letter-spacing: 1px;
 } 
     
 }  

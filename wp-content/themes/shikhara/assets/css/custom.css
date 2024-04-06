@@ -1,10 +1,13 @@
+html {
+    overflow: hidden;
+}
 body {
     margin: 0;
-    padding: 0;
-    font-family: 'WorkSans-Regular';
-    font-size: 21px; 
-    font-weight: 400;
-    color: #505a70; 
+    padding: 0; 
+    font-weight: 400; 
+    font-family: 'Titillium-regular';
+    font-size: 18px; 
+    color: #403f40; 
 }
 .bodyWrap, bodyWrap p{
     font-size: 16px;
@@ -34,20 +37,20 @@ img{
     max-width: 100%;
     height: auto;
 }
-h1, h2, h3, h4,h5,h6{
-    font-family: 'WorkSans-SemiBold';
+h1, h2, h3, h4,h5, h6{ 
+    font-family: 'Titillium-bold';
     font-weight: 600;
     margin-bottom: 15px;
     color: #28283c;
 }
-.semiboldTxt{
-    font-family: 'WorkSans-SemiBold';
+.semiboldTxt{ 
+    font-family: 'Titillium-bold';
     font-weight: 600;
 }
-em, i{
-    font-family: 'Work Sans', sans-serif;
-    font-style: italic;
+em, i{ 
+    font-family: 'Titillium-italic';
     font-weight: 400;
+    font-style: italic;
 }
 p {
     margin-bottom: 15px;
@@ -513,3 +516,48 @@ footer.footer {
     text-decoration: none;
     border-color: #000000;
 }  
+
+.coming_soon_wrapper {
+    background-image: url('../images/coming_soon_bg.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 85% auto;
+    background-color: #f3f4f3;
+    height: 100vh;
+    text-align: center;
+    padding: 120px 50px;
+}
+.coming_soon_wrapper .website_logo img {
+    max-width: 400px; 
+}
+.coming_soon_wrapper .coming_soon_content {
+    margin-top: 150px;
+}
+.coming_soon_wrapper .coming_soon_content h1 {
+    font-size: 90px;
+    font-family: 'Titillium-italic';
+    font-weight: 400;
+    color: #000000;
+    line-height: 1.3;
+    font-style: italic;
+}
+.coming_soon_wrapper .coming_soon_content p {
+    margin-top: 30px;
+}
+.coming_soon_wrapper .coming_soon_content p,
+.coming_soon_wrapper .coming_soon_content p a {
+    font-size: 13px;
+    font-family: 'Titillium-bold';
+    color: #403f40;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.coming_soon_wrapper .coming_soon_content p a {
+    text-decoration: none;
+    transition: all .5s;
+}
+.coming_soon_wrapper .coming_soon_content p a:hover,
+.coming_soon_wrapper .coming_soon_content p a:focus {
+    text-decoration: none;
+    color: #46ad96;
+}
