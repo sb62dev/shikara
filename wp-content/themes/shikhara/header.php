@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/slick.css">
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/slick-theme.css"> 
+    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/slick-theme.css">
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/fonts.css?v1">
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/animate.css">
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/aos.css">
@@ -31,7 +31,7 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]--> 
+    <![endif]-->
 
 
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/js/jquery.min.js"></script>
@@ -40,4 +40,66 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <?php wp_body_open(); ?> 
+    <?php wp_body_open(); ?>
+
+
+    <header class="header sticky-header">
+        <div class="container">
+            <div class="header_main count_lftpadd">
+                <div class="d-flex">
+                    <div class="logo">
+                        <a href="<?php echo get_home_url(); ?>">
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo.svg" alt="logo" width="165" class="black_logo">
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo_white.svg" alt="logo" width="165" class="white_logo d-none">
+                        </a>
+                    </div>
+                    <div class="main-navigation">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="#"> </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                                <span class="navbar-toggler-icon-new"></span>
+                                <span class="navbar-toggler-icon-new"></span>
+                                <span class="navbar-toggler-icon-new"></span>
+                            </button>
+                            <!-- Navbar links -->
+                            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                                <div class="main_nav_top"> 
+                                    <?php  
+                                        wp_nav_menu(
+                                            array(
+                                                'theme_location' => 'top',
+                                                'menu_class'     => 'website_nav'
+                                            )
+                                        );
+                                    ?> 
+                                </div>
+                                <div class="fixdNav">
+                                    <div class="fixdNav-head">
+                                        <div class="d-flex">
+                                            <div class="logo">
+                                                <a href="<?php echo get_home_url(); ?>"> <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo.svg" alt="logo" width="240"> </a>
+                                            </div>
+                                            <div class="closeBtn">
+                                                <a href="javascript:void(0);" data-target="#collapsibleNavbar" aria-expanded="true" data-toggle="collapse"> <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/closeMenu.svg" alt="close" width="35" height="35"> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fixdNav-mid"> 
+                                        <?php  
+                                            wp_nav_menu(
+                                                array(
+                                                    'theme_location' => 'top',
+                                                    'menu_class'     => 'website_nav'
+                                                )
+                                            );
+                                        ?> 
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--- end of header --> 

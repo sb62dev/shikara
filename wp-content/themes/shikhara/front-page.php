@@ -14,6 +14,16 @@
 
 get_header(); ?>
 
+<style>
+     html {
+         overflow: auto;
+     }
+    header, footer, .disclaimersec {
+        display: none;
+    }
+
+ </style>
+
 <div class="coming_soon_wrapper">
     <div class="website_logo">
         <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/coming_soon_logo.svg" alt="Logo" />

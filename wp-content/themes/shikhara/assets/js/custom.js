@@ -117,7 +117,9 @@ jQuery(window).on("load resize", function () {
             "padding-left": +t.left
         }), jQuery(".container_rghtpadd").css({
             "padding-right": +t.left
-        })) 
+        }), jQuery(".container_lftpadd_").css({
+            "padding-left": +t.left - 25
+        }))  
     });   
 }); 
 
