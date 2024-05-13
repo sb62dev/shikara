@@ -89,7 +89,7 @@ get_header();
                                 <?php the_field('exe_description'); ?>
                                 <?php if( get_field('exe_button_label') ): ?>
                                 <div class="global_expertise_btn btn-wrap">
-                                    <a href="<?php the_field('exe_button_link'); ?>" class="btn-style"><?php the_field('exe_button_label'); ?></a>
+                                    <a href="<?php the_field('exe_button_link'); ?>" class="btn-style"> <span class="btn-style-txt"> <?php the_field('exe_button_label'); ?> </span></a>
                                 </div>
                                 <?php endif; ?>
                             </div>
@@ -174,7 +174,7 @@ get_header();
                                 <?php endif; ?>
                                 <?php if( get_field('team_button_label') ): ?>
                                 <div class="multicultural_btn btn-wrap">
-                                    <a href="<?php the_field('team_button_link'); ?>" class="btn-style"><?php the_field('team_button_label'); ?></a>
+                                    <a href="<?php the_field('team_button_link'); ?>" class="btn-style"><span class="btn-style-txt"><?php the_field('team_button_label'); ?></span></a>
                                 </div>
                                 <?php endif; ?>
                             </div>

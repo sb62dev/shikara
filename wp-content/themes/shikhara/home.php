@@ -8,7 +8,7 @@
 
 get_header();
 
-?> 
+?>
 
  <div class="home">
      <div class="container_outer">
@@ -29,7 +29,7 @@ get_header();
                              <?php endif; ?>
                              <?php if( get_field('banner_btnTxt') ): ?>
                              <div class="homeBanner_btn btn-wrap">
-                                 <a href="<?php the_field('homeBanner_btnLink'); ?>" class="btn-style"> <?php the_field('banner_btnTxt'); ?> </a>
+                                 <a href="<?php the_field('homeBanner_btnLink'); ?>" class="btn-style"> <span class="btn-style-txt"> <?php the_field('banner_btnTxt'); ?> </span> </a>
                              </div>
                              <?php endif; ?>
                          </div>
@@ -114,7 +114,7 @@ get_header();
                                      <?php endif; ?>
                                      <?php if( get_field('val_btnTxt') ): ?>
                                      <div class="btn-wrap home_val_btn">
-                                         <a href="<?php the_field('val_btnLink'); ?>" class="btn-style"> <?php the_field('val_btnTxt'); ?> </a>
+                                         <a href="<?php the_field('val_btnLink'); ?>" class="btn-style"> <span class="btn-style-txt"> <?php the_field('val_btnTxt'); ?> </span> </a>
                                      </div>
                                      <?php endif; ?>
                                  </div>
@@ -167,8 +167,10 @@ get_header();
 -->
                          <?php endif; ?>
                          <?php if( get_field('prcs_btnTxt') ): ?>
-                         <div class="btn-wrap home_prcs_btn text-center">
-                             <a href="<?php the_field('prcs_btnLink'); ?>" class="btn-style"> <?php the_field('prcs_btnTxt'); ?> </a>
+                         <div class="text-center clearfix">
+                             <div class="btn-wrap home_prcs_btn">
+                                 <a href="<?php the_field('prcs_btnLink'); ?>" class="btn-style"> <span class="btn-style-txt"> <?php the_field('prcs_btnTxt'); ?> </span> </a>
+                             </div>
                          </div>
                          <?php endif; ?>
                      </div>
@@ -183,7 +185,7 @@ get_header();
                          <div class="home_chiefBox_lft">
                              <div class="home_chiefBoxDesc">
                                  <?php if( get_field('chief_desc') ): ?>
-                                 <div class="home_chiefBoxDesc_txt">
+                                 <div class="home_chiefBoxDesc_txt fonts14">
                                      <?php the_field('chief_desc'); ?>
                                  </div>
                                  <?php endif; ?>
@@ -209,7 +211,7 @@ get_header();
          <section class="home_strgies padd-row">
              <div class="container">
                  <div class="home_strgiesIn">
-                     <div class="main_heading text-center"  data-aos="fade-up">
+                     <div class="main_heading text-center" data-aos="fade-up">
                          <?php if( get_field('strgs_sub_title') ): ?>
                          <div class="subHeading subHeadingIcon"> <?php the_field('strgs_sub_title'); ?> </div>
                          <?php endif; ?>
@@ -222,7 +224,7 @@ get_header();
                          <div class="row">
                              <?php while( have_rows('strgs_list') ): the_row(); ?>
                              <div class="col-md-6">
-                                 <a href="<?php echo get_sub_field('strgs_btnLink'); ?>" class="home_strgsBox"  data-aos="fade-up">
+                                 <a href="<?php echo get_sub_field('strgs_btnLink'); ?>" class="home_strgsBox" data-aos="fade-up">
                                      <?php if( get_sub_field('image') ): ?>
                                      <div class="home_strgsBox_img">
                                          <img src="<?php echo get_sub_field('image'); ?>" alt="Image" />
@@ -238,7 +240,7 @@ get_header();
                                              <?php endif; ?>
                                              <?php if( get_sub_field('strgs_btnTxt') ): ?>
                                              <div class="btn-wrap home_strgies_btn">
-                                                 <span href="javascript:void(0);" class="btn-style"> <?php echo  get_sub_field('strgs_btnTxt'); ?> </span>
+                                                 <span href="javascript:void(0);" class="btn-style"> <span class="btn-style-txt"> <?php echo  get_sub_field('strgs_btnTxt'); ?> </span> </span>
                                              </div>
                                              <?php endif; ?>
                                          </div>
@@ -365,7 +367,7 @@ get_header();
                          </div>
                          <div class="col-xl-9 col-md-8">
                              <div class="home_contact_form">
-                                    <?php echo do_shortcode('[wpforms id="116" title="false"]'); ?>
+                                 <?php echo do_shortcode('[wpforms id="116" title="false"]'); ?>
                              </div>
                          </div>
                      </div>

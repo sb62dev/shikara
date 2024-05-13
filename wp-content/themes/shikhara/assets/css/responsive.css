@@ -79,9 +79,26 @@ p {
 .home_news_rght {
     position: relative;
     right: -15%;
+} 
+.value_box {
+    padding: 0 10px;
+    font-size: 15px;
 }
     
 }    
+
+@media screen and ( min-width: 1600px ) {
+
+.homeBanner_btmimg img {
+    position: relative;
+    right: -3em;
+    width: 1070px;
+}
+.homeBanner_btmimg {
+    bottom: -213px;
+}
+    
+}
 
 @media screen and (max-width: 1599px) {
     
@@ -98,6 +115,32 @@ p {
 .coming_soon_wrapper .coming_soon_content h1 {
     font-size: 85px;
 } 
+    
+} 
+
+@media ( min-width: 1300px ) and ( max-width: 1599px ) {
+
+.homeBanner_btmimg img {
+    position: relative;
+    right: -2em;
+    width: 1040px;
+}
+.homeBanner_btmimg {
+    bottom: -207px;
+}
+    
+}
+
+@media ( min-width: 1200px ) and ( max-width: 1299px ) {
+
+.homeBanner_btmimg img {
+    position: relative;
+    right: -2em;
+    width: 920px;
+}
+.homeBanner_btmimg {
+    bottom: -183px;
+}
     
 }
 
@@ -203,13 +246,16 @@ body{
 .btn-style, .news_popForm div.wpforms-container-full .wpforms-form button[type=submit] { 
     font-size: 13px; 
     padding: 8px 18px; 
-}
+} 
 .btn-style::after { 
     border-top-width: 20px;
-    border-left-width: 24px;
+    border-left-width: 14px;
     border-bottom-width: 20px; 
-    right: -26px;
-}
+    right: -16px;
+} 
+.btn-style:hover, .news_popForm div.wpforms-container-full .wpforms-form button[type=submit]:hover, .home_contact_form .wpforms-container-full .wpforms-form .btn-style:hover { 
+    padding-right: 20px;  
+} 
 .home_news_lft {
     padding-right: 4%;
 }
@@ -313,6 +359,7 @@ div#collapsibleNavbar {
 }
 .blockQuote {
     font-size: 16px;
+    margin: 25px 0;
 }
 .home_val_listBox {
     padding-right: 64px;
@@ -540,6 +587,11 @@ html, body, .coming_soon_wrapper{
 }
 .home_contactIn .main_heading {
     margin-bottom: 20px !important;
+}
+.home_prcs_btn {  
+    position: static; 
+    float: none; 
+    left: auto;
 }
     
 }  

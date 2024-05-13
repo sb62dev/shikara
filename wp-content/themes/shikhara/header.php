@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/slick.css">
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/slick-theme.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/fonts.css?v1">
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/animate.css">
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/aos.css">
@@ -63,7 +66,7 @@
                             </button>
                             <!-- Navbar links -->
                             <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                                <div class="main_nav_top"> 
+                                <div class="main_nav_top">
                                     <?php  
                                         wp_nav_menu(
                                             array(
@@ -71,7 +74,7 @@
                                                 'menu_class'     => 'website_nav'
                                             )
                                         );
-                                    ?> 
+                                    ?>
                                 </div>
                                 <div class="fixdNav">
                                     <div class="fixdNav-head">
@@ -84,7 +87,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="fixdNav-mid"> 
+                                    <div class="fixdNav-mid">
                                         <?php  
                                             wp_nav_menu(
                                                 array(
@@ -92,7 +95,7 @@
                                                     'menu_class'     => 'website_nav'
                                                 )
                                             );
-                                        ?> 
+                                        ?>
                                     </div>
                                 </div>
                             </div>
@@ -102,4 +105,4 @@
             </div>
         </div>
     </header>
-    <!--- end of header --> 
+    <!--- end of header -->
