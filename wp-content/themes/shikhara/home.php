@@ -138,8 +138,13 @@ get_header();
                      </div>
                      <div class="home_processRow" data-aos="fade-up">
                          <?php if( get_field('prcs_img') ): ?>
-                         <div class="home_process_fullImg">
+                         <div class="home_process_fullImg d-none d-md-block">
                              <img src="<?php the_field('prcs_img'); ?>" alt="Process Image">
+                         </div>
+                         <?php endif; ?>
+                         <?php if( get_field('prcs_img_mob') ): ?>
+                         <div class="home_process_fullImg d-md-none">
+                             <img src="<?php the_field('prcs_img_mob'); ?>" alt="Process Image">
                          </div>
                          <?php endif; ?>
                          <?php if( have_rows('process_list') ): ?>

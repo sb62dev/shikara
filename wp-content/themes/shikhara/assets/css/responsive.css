@@ -84,6 +84,16 @@ p {
     padding: 0 10px;
     font-size: 15px;
 }
+.investprc_sec2_cardBox_inBlue ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.investprc_sec2_cardBox_inBlue li {
+    width: 49%; 
+}
+.investprc_sec2_cardBox_inBlue li:nth-child(even) {
+    margin-left: 2%;  
+}
     
 }    
 
@@ -602,6 +612,33 @@ html, body, .coming_soon_wrapper{
     border-bottom-width: 20px;
     right: -13px;
     top: -2.5px;
+}
+.investprc_sec2_right {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.investprc_sec2_cardBox_in {
+    padding: 20px;
+    font-size: 13px;
+}
+.investprc_sec2_cardBox_in h5 {
+    font-size: 14px; 
+    margin-bottom: 8px; 
+}
+.investprc_sec2_cardBox_inWhite_desc { 
+    font-size: 14px;
+}
+.investprc_sec2_cardBox_inGrey [class*='col-']:nth-child(2) {
+    border: 0;
+    padding-left: 15px;
+    margin-top: 25px;
+}
+.investprc_icon { 
+    margin-top: -42px;
+    padding-bottom: 15px;
+}
+.investprc_icon img {
+    width: 42px;
 }
     
 }  

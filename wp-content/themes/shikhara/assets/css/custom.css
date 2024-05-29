@@ -373,6 +373,9 @@ p {
     padding-left: 20px;
     margin: 35px 0;
 } 
+p:empty {
+    display: none;
+}
 
 /*--- Header ---*/ 
  
@@ -1136,4 +1139,58 @@ div.wpforms-container-full .wpforms-confirmation-container-full, div[submit-succ
     float: left;
     position: relative; 
     left: 42.8%;
+}
+.investprc_sec2_right_btmdesc {
+    margin-top: 40px;
+} 
+.investprc_sec2_cardBox_inBlue {
+    color: #fff;
+    background: #1E4262;
+}
+.investprc_sec2_cardBox_in {
+    padding: 30px;
+    font-size: 14px;
+}
+.investprc_sec2_cardBox_in h5 {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #48AD96;
+    font-family: 'Titillium-bold';
+    font-weight: 600;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+.investprc_sec2_cardBox_in ul, .investprc_sec2_cardBox_in ol {
+    list-style: disc;
+    margin-left: 16px; 
+}
+.investprc_sec2_cardBox_in li { 
+    margin-bottom: 5px;
+}
+.investprc_sec2_cardBox_bgWhite {
+    background: #fff;
+}
+.investprc_sec2_cardBox_inWhite_desc {
+    color: #1E4262;
+    font-size: 17px;
+}
+.investprc_sec2_cardBox {
+    border: 1px solid #626469;
+    position: relative;
+}
+.investprc_sec2_cardBox_inGrey [class*='col-']:nth-child(2) {
+    border-left: 1px solid #626469;
+    padding-left: 24px;
+}
+.investprc_icon {
+    text-align: center;
+    margin-top: -60px;
+    padding-bottom: 20px;
+}
+.investprc_sec2_cardBox_inGrey_box h5 {
+    letter-spacing: 0.5px;
+    padding-bottom: 13px;
+    border-bottom: 1.5px dashed #7e7e7e;
+    margin-bottom: 12px;
+    margin-right: 5px;
 }
