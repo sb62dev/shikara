@@ -243,7 +243,7 @@ body{
 .sub_heading h3 {
     font-size: 26px;
 }
-.btn-style, .news_popForm div.wpforms-container-full .wpforms-form button[type=submit] { 
+.btn-style, .news_popForm div.wpforms-container-full .wpforms-form button[type=submit], .home_contact_form .wpforms-container-full .wpforms-form .btn-style { 
     font-size: 13px; 
     padding: 8px 18px; 
 } 
@@ -592,6 +592,16 @@ html, body, .coming_soon_wrapper{
     position: static; 
     float: none; 
     left: auto;
+}
+.homeBanner .homeBanner_txt{
+    padding: 0 30px;
+}
+.btn-style::after {
+    border-top-width: 20px;
+    border-left-width: 12px;
+    border-bottom-width: 20px;
+    right: -13px;
+    top: -2.5px;
 }
     
 }  
