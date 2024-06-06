@@ -168,7 +168,7 @@ get_header();
                                     </div>
                                     <?php endif; ?>
                                     <?php if( get_field('invst_page_sec3_blockquote') ): ?>
-                                    <div class="blockQuote mt-4 mt-xl-5">
+                                    <div class="blockQuote">
                                         <?php the_field('invst_page_sec3_blockquote'); ?>
                                     </div>
                                     <?php endif; ?>

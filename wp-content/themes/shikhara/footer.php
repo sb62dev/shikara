@@ -38,15 +38,6 @@
                     <div class="ftr-logo">
                         <a href="<?php echo get_home_url(); ?>"> <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo_white.svg" alt="logo" width="200"> </a>
                     </div>
-                    <!--
-                     <div class="ftrSocial mt-4 mt-md-5">
-                         <ul>
-                             <li><a target="_blank" rel="noopener" href="https://twitter.com/OisterGlobal"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                             <li><a target="_blank" rel="noopener" href="https://www.linkedin.com/company/83531039/admin/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                             <li><a target="_blank" rel="noopener" href="https://youtube.com/@OisterGlobal?si=ukUUjBXLhVw44HHW"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                         </ul>
-                     </div>
--->
                 </div>
                 <div class="col-md-6">
                     <div class="ftrLinks ftrMenu-list">
@@ -60,8 +51,14 @@
                         ?>
                     </div>
                 </div>
-                <!--
-                 <div class="col-md-3">
+
+                <div class="col-md-3">
+                    <div class="ftrSocial">
+                        <ul>
+                            <li><a target="_blank" rel="noopener" href="https://www.linkedin.com/company/shikhara-investments/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    <!--
                      <div class="ftr_contact_box">
                          <div class="ftr_txt">
                              <div class="ftr_heading"> Contact Info </div>
@@ -70,8 +67,9 @@
                          <div class="ftr_txt"><span>Phone:</span> <a href="tel:+91-8882137261">+91-8882137261</a></div>
                          <div class="ftr_txt"><span>Email:</span> <a href="mailto:support@oisterglobal.com">support@oisterglobal.com</a></div>
                      </div>
-                 </div>
 -->
+                </div>
+
             </div>
         </div>
     </div>
@@ -85,9 +83,11 @@
                 <div class="modal-body">
                     <div class="news_popWrap">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h2 class="h2"> Subscribe to our newsletter </h2>
+                        <div class="main_heading">
+                            <h2 class="h2"> Subscribe to our <em>newsletter</em> </h2>
+                        </div> 
                         <div class="news_popForm">
-                            <?php echo do_shortcode('[wpforms id="218" title="false"]'); ?>
+                            <?php echo do_shortcode('[wpforms id="471" title="false"]'); ?>
                         </div>
                     </div>
                 </div>

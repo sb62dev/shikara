@@ -54,6 +54,75 @@
 .home_abt_top {
     max-width: 55%;
 }
+.main_nav_top ul li.menu-item-has-children:after {
+    content: '';
+    border: 2px solid #46ad96;
+    width: 6px;
+    height: 6px;
+    padding: 0;
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    border-top: 0;
+    border-left: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    margin-top: -2px;
+}
+.main_nav_top ul li { 
+    padding: 6px 0; 
+}
+.header .main_nav_top .menu-top-menu-container .sub-menu {
+    position: absolute;
+    background: #fff;
+    min-width: 140px;
+    padding: 3px;
+    z-index: 9;
+    box-shadow: 0 0 5px #20324a;
+    display: none;
+    transition: all .7s;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 8px 32px rgba(30, 30, 36, 0.2);
+}
+.header .main_nav_top .menu-top-menu-container ul li:hover .sub-menu{
+    display: block;
+}
+.header .main_nav_top .menu-top-menu-container .sub-menu:before {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: -8px;
+    margin-left: -13px;
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    content: '';
+    display: block;
+    transform: rotateZ(45deg);
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 50%;
+    z-index: 0;
+}
+.header .main_nav_top .menu-top-menu-container .sub-menu li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+.header .main_nav_top .menu-top-menu-container .sub-menu li a {
+    display: block;
+    padding: 9px 18px;
+    border-bottom: 1px solid #f2f2f2;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 0;
+    text-decoration: none;
+    transition: all .5s;
+}
+.header .main_nav_top .menu-top-menu-container .sub-menu li a:hover, .header .main_nav_top .menu-top-menu-container .sub-menu li.current_page_item a {
+    color: #28283c;
+    background-color: #f2f2f2;
+}  
     
 }
 
@@ -80,7 +149,7 @@ p {
     position: relative;
     right: -15%;
 } 
-.value_box {
+.value_box, .strgs_featuresBox, .location_cardBox {
     padding: 0 10px;
     font-size: 15px;
 }
@@ -93,6 +162,15 @@ p {
 }
 .investprc_sec2_cardBox_inBlue li:nth-child(even) {
     margin-left: 2%;  
+}
+.team_cardList {
+    padding: 0 25px;
+}
+.team_cardList .row {
+    margin: 0 -50px;
+}
+.team_cardList [class*='col-'] {
+    padding: 0 25px;
 }
     
 }    
@@ -137,6 +215,15 @@ p {
 }
 .homeBanner_btmimg {
     bottom: -207px;
+}
+    
+}
+
+@media ( min-width: 1300px ) and ( max-width: 1459px ) {
+    
+.innerBanner { 
+    background-size: 90%; 
+    padding: 80px 0;
 }
     
 }
@@ -374,7 +461,7 @@ div#collapsibleNavbar {
 .home_val_listBox {
     padding-right: 64px;
 }
-.home_val_list .home_val_listBox h4, .home_strgsBox .home_strgsBox_txtWrap h4, .home_chiefBox .home_chiefBoxDesc .home_chiefBoxDesc_name, .value_box h6 {
+.home_val_list .home_val_listBox h4, .home_strgsBox .home_strgsBox_txtWrap h4, .home_chiefBox .home_chiefBoxDesc .home_chiefBoxDesc_name, .value_box h6, .strgs_featuresBox h4, .location_cardBox h4, .team_cardBox h4, .teamModalBox h4   {
     font-size: 14px;
 }
 .home_chiefBox .home_chiefBoxDesc { 
@@ -396,9 +483,55 @@ div#collapsibleNavbar {
 }
 .home_strgsBox .home_strgsBox_txtWrap { 
     padding-top: 12px;
+} 
+.teamModal .modal-dialog {
+    padding: 20px 5px;
 }
-.innerBanner {
-    background-image: none !important;
+.contact_mapBox iframe {
+    height: 230px !important;
+}
+.fixdNav-mid ul li a svg.icon.icon-angle-down, svg.icon.icon-angle-down {
+    display: none !important;
+}
+.fixdNav-mid ul li {
+    position: relative; 
+}
+.fixdNav-mid ul li a {
+    font-size: 14px;
+    text-align: left;
+}
+.fixdNav-mid ul li .dropdown-toggle {
+    background: transparent;
+    position: absolute;
+    top: 25px; 
+    right: 0;
+    box-shadow: none !important;
+    outline: none !important;
+}
+.fixdNav-mid ul li .dropdown-toggle::after {
+    content: '';
+    border: 2px solid #46ad96;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    right: 10px;
+    border-top: 0;
+    border-left: 0;
+    transform: rotate(45deg) translateY(-50%);
+    top: 50%;
+    margin-top: -4px;
+}
+.fixdNav-mid ul .sub-menu {
+    display: none;
+    width: 100%;
+}
+.fixdNav-mid ul .sub-menu.toggled-on {
+    display: block;
+    padding: 12px 0 12px 20px;
+}
+.fixdNav-mid ul li .sub-menu li a {
+    font-size: 12px;
+    padding: 10px 0;
 }
     
 } 
@@ -414,6 +547,31 @@ div#collapsibleNavbar {
 }
 .home_newsBox .home_newsBox_rght {
     width: calc(100% - 150px);
+} 
+.teamModal .teamModalBox_descWrap {
+    padding-right: 35px;
+}
+.teamModal .modal-dialog {
+    padding: 25px 15px;
+}
+.teamModalBox_row {
+    width: calc(100% - 40px );
+    padding: 0 10px;
+}
+.teamModal .teamModalBox_desc {
+    font-size: 12px;
+    margin-top: 14px;
+    padding-top: 14px;
+}
+.teamModal .teamModalBox_subtitle { 
+    font-size: 12px;
+}
+.teamModal_navbtn { 
+    width: 20px !important; 
+}
+.teamModalBox_heading .teamModalBox_close {
+    right: 0;
+    top: -20px;
 }
     
 } 
@@ -581,7 +739,7 @@ html, body, .coming_soon_wrapper{
 .value_box .value_icon img {
     max-height: 50px;
 }
-.value_box h6 {
+.value_box h6, .strgs_featuresBox h4, .location_cardBox h4  {
     margin-bottom: 12px;
     padding-bottom: 12px;
 }
@@ -592,7 +750,7 @@ html, body, .coming_soon_wrapper{
 .values_iconllist > .row {
     margin-bottom: -45px;
 }
-.values_iconllist [class*='col-'] {
+.values_iconllist [class*='col-'], .strgs_featuresBox_list [class*='col-'], .location_card [class*='col-'], .team_cardList [class*='col-'] {
     margin-bottom: 45px;
 }
 .home_contactIn .main_heading {
@@ -640,5 +798,122 @@ html, body, .coming_soon_wrapper{
 .investprc_icon img {
     width: 42px;
 }
+.teamModalBox {
+    display: block;
+}
+.teamModalBox_row {
+    width: 100%;
+    padding: 0 10px;
+} 
+.teamModalBox_lftSide {
+    margin-bottom: 40px;
+}
+.teamModalBox_heading .teamModalBox_close {
+    top: -25px;
+    right: -10px;
+}
+.teamModal .teamModalBox_desc { 
+    font-size: 12px;
+}
+.teamModal .teamModalBox_subtitle { 
+    font-size: 13px;
+}
+.teamModal_btnwrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.teamModal_navbtn { 
+    width: 30px !important;
+    margin: 0 5px; 
+}
+.team_cardBox .team_cardBox_img .team_cardBox_img_design { 
+    height: 80px; 
+}
+.team_cardBox .team_cardBox_img .team_cardBox_image img {
+    max-height: 115px; 
+}
+.team_cardBox h4 {
+    font-size: 13px;
+}
+.team_cardBox .team_cardBox_cnt .team_cardBox_desc {
+    font-size: 11px;
+    margin-top: 4px;
+}
+.teamModal .teamModalBox_descWrap {
+    padding-right: 40px;
+}
+.teamModal .teamModalBox_desc:before { 
+    top: -2px; 
+    margin-left: 18px;
+    width: 25px;
+    height: 20px; 
+}
+.teamModal .teamModalBox_desc:after { 
+    width: 26px; 
+    top: 8px; 
+    margin-left: -4px;
+}
+.teamModalBox_img {
+    max-width: 260px;
+}
+.teamModalBox_img .teamModalBox_image img {
+    max-height: 170px;
+}
+.contact_sec3_rght {
+    margin-top: 35px;
+}
+.contact_tabNav ul {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+.contact_tabNav li + li {
+    margin-top: 0;
+    margin-left: 18px;
+}
+.contact_sec2_rght {
+    margin-top: 15px;
+}
+.location_card [class*='col-'] {
+    margin-bottom: 25px;
+}
+.investPrcsPage .innerBanner {
+    background-size: 60% !important;
+}
+.strgsPage .innerBanner {
+    background-size: 70% !important;
+}
+.page-id-320 .innerBanner{
+    background-size: 80% !important;
+}
+.teamPage .innerBanner { 
+    background-size: 100% !important;
+}
+.contactPage .innerBanner { 
+    background-size: 100% !important;
+}
+.banner_bredcrumb {
+    font-size: 10px; 
+    letter-spacing: 1.5px;
+}
+.teamModalBox_row {
+    position: relative;
+}
+.teamModalBox_heading, .teamModalBox_row [class*='col-'] {
+    position: static;
+}
     
 }  
+
+@media screen and ( max-width: 374px ){
+    
+.investPrcsPage .innerBanner {
+    background-size: 70% !important;
+}
+.teamPage .innerBanner {
+    background-size: 120% !important;
+}
+     
+}

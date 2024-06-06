@@ -49,7 +49,7 @@ get_header();
                          <div class="home_abt_top_blockquote"> <?php the_field('abtblockquote'); ?> </div>
                      </div>
                      <div class="home_abt_btm">
-                         <div class="row align-items-center">
+                         <div class="row">
                              <div class="col-md-6">
                                  <div class="home_abt_img" data-aos="fade-up">
                                      <div class="about_feature_icon">
@@ -343,7 +343,9 @@ get_header();
                                      <?php endif; ?>
                                      <?php if( get_field('newsler_btnTxt') ): ?>
                                      <div class="btnLink-wrap home_newsleter_btn">
-                                         <a href="javascript:void(0);" class="btn-link"> <span><?php the_field('newsler_btnTxt'); ?></span> </a>
+                                         <a href="javascript:void(0);" class="btn-link" data-toggle="modal" data-target="#newspop" > 
+                                             <span><?php the_field('newsler_btnTxt'); ?></span> 
+                                         </a>
                                      </div>
                                      <?php endif; ?>
                                  </div>

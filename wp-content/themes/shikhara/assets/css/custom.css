@@ -99,7 +99,7 @@ p {
     font-family: 'Titillium-bold';
 }
 .sub_heading {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 .sub_heading h3 {
     text-transform: uppercase;
@@ -183,7 +183,7 @@ p {
     transition: all .5s;
     letter-spacing: 0.3px;
 }
-.btn-style:hover .btn-style-txt, .home_contact_form .wpforms-container-full .wpforms-form .btn-style:hover {
+.btn-style:hover .btn-style-txt, .home_contact_form .wpforms-container-full .wpforms-form .btn-style:hover, .news_popForm div.wpforms-container-full .wpforms-form button[type=submit]:hover {
     letter-spacing: 1.5px;
 }
 .home_contact_form .wpforms-container-full .wpforms-form .btn-style {
@@ -336,6 +336,9 @@ p {
 }
 .bgBlueLight {
     background-color: #D4E2EB;
+}
+.lightGreenBG {
+    background-color: #e6f3ef;
 }
 .pb_200 {
     padding-bottom: 200px;
@@ -590,7 +593,7 @@ footer.footer {
     background: #ffffff;
     border-radius: 50%;
     text-align: center;
-    color: #6274e7;
+    color: #46ad96;
     transition: all .3s;
     font-size: 15px;
     justify-content: center;
@@ -598,7 +601,7 @@ footer.footer {
 .ftrSocial li a:hover{
     color: #fff;
     text-decoration: none;
-    background: #6274e7;
+    background: #46ad96;
 }
 .ftr_contact_box {
 	margin-bottom: 20px;
@@ -750,7 +753,7 @@ footer.footer {
     margin-bottom: 30px;
     counter-increment: list-number;
 }
-.home_val_list .home_val_listBox h4, .home_strgsBox .home_strgsBox_txtWrap h4, .value_box h6 {
+.home_val_list .home_val_listBox h4, .home_strgsBox .home_strgsBox_txtWrap h4, .value_box h6, .strgs_featuresBox h4, .strgsSingle_se3_rght h4, .location_cardBox h4, .team_cardBox h4, .teamModalBox h4 {
     font-size: 16px;
     text-transform: uppercase;
     margin: 0;
@@ -1108,7 +1111,7 @@ footer.footer {
 .values_iconllist > .row {
     margin-bottom: -60px;
 }
-.values_iconllist [class*='col-'] {
+.values_iconllist [class*='col-'], .strgs_featuresBox_list [class*='col-'] , .location_card [class*='col-'], .team_cardList [class*='col-']{
     margin-bottom: 60px;
 } 
 .value_box .value_icon {
@@ -1117,7 +1120,7 @@ footer.footer {
 .value_box .value_icon img {
     max-height: 70px;
 }
-.value_box h6 {
+.value_box h6, .strgs_featuresBox h4, .location_cardBox h4  {
     letter-spacing: 0.5px;
     padding-bottom: 13px;
     border-bottom: 1.5px dashed #7e7e7e;
@@ -1193,4 +1196,299 @@ div.wpforms-container-full .wpforms-confirmation-container-full, div[submit-succ
     border-bottom: 1.5px dashed #7e7e7e;
     margin-bottom: 12px;
     margin-right: 5px;
+}
+.strgsSingle_se3_rght h4 {
+    margin-bottom: 15px !important;
+}
+.banner_bredcrumb {
+    font-size: 11px;
+    margin-bottom: 8px;
+    color: #616368;
+    letter-spacing: 2.5px;
+    font-weight: 600;
+    font-family: 'Titillium-semiBold';
+    text-transform: uppercase;
+}
+.banner_bredcrumb ul {
+    display: flex;
+    align-items: center;
+}
+.banner_bredcrumb li + li {
+    position: relative;
+    padding-left: 20px;
+}
+
+.banner_bredcrumb li + li:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 11px;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%) rotate(26deg);
+    background: #616368;
+}
+.banner_bredcrumb li a {
+    text-decoration: none;
+    color: #616368;
+    transition: all .5s;
+}
+.banner_bredcrumb li a:hover {
+    color: #46ad96;
+    text-decoration: none;
+}
+.contact_sec1_rght .home_contact_form .wpforms-container-full {
+    margin-top: 0 !important;
+}
+.team_cardBox {
+    display: block;
+    margin: 0;
+    text-decoration: none;
+}
+.team_cardBox .team_cardBox_cnt {
+    margin-top: 15px;
+}
+.team_cardBox .team_cardBox_cnt .team_cardBox_desc {
+    font-size: 14px;
+    margin-top: 5px;
+}
+.team_cardBox .team_cardBox_img, .teamModalBox_img {
+    position: relative;
+    max-width: 270px;
+}
+.team_cardBox .team_cardBox_img .team_cardBox_image, .teamModalBox_img .teamModalBox_image{ 
+    z-index: 1;  
+    position: relative;
+}
+.team_cardBox .team_cardBox_img .team_cardBox_image img, .teamModalBox_img .teamModalBox_image img{
+    max-height: 170px;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+}
+.team_cardBox .team_cardBox_img .team_cardBox_img_design, .teamModalBox_img .teamModalBox_img_design{
+    width: 100%;
+    background: #F5F5F5;
+    border-radius: 130px 130px 0 0;
+    height: 120px;
+    position: absolute;
+    bottom: 0; 
+    transition: all .5s;
+}
+.team_cardBox:hover .team_cardBox_img .team_cardBox_img_design, .teamModalBox_img .teamModalBox_img_design{
+    background: #47AD96;
+}
+.team_cardBox:hover, .team_cardBox:hover * {
+    text-decoration: none;
+    color: inherit;  
+}
+.team_cardBox:hover h4 {
+    color: #47AD96 !important;
+}
+.team_top_heading {
+    margin-bottom: 60px;
+}
+.team_sec_heading {
+    margin-bottom: 45px;
+}
+.bgLightgrey .team_cardBox:not(:hover) .team_cardBox_img .team_cardBox_img_design {
+    background: #fff; 
+}
+.contact_sec1_lft .contact_sec1_lft_desc {
+    font-family: 'Titillium-regular';
+    font-size: 13px;
+}
+.teamModalBox {
+    padding: 45px 20px;
+    display: flex;
+    align-items: center;
+}
+.teamModalBox_row {
+    width: calc(100% - 80px );
+    padding: 0 40px;
+}
+.teamModal .modal-dialog {
+    max-width: 1400px;
+    padding: 25px 50px;
+    border-radius: 0;
+}
+.teamModal .modal-content {
+    box-shadow: none;
+    border-radius: 0 !important;
+    border: 0 !important;
+}
+.teamModal h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.teamModal .teamModalBox_subtitle {
+    font-family: 'Titillium-bold';
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.2;
+}
+.teamModal .teamModalBox_descWrap { 
+    padding-right: 75px;
+}
+.teamModal .teamModalBox_desc {
+    font-size: 15px;
+    margin-top: 18px;
+    padding-top: 18px;
+    border-top: 1px solid #000;
+    position: relative;
+} 
+.teamModal .teamModalBox_desc:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 100%;
+    margin-left: 28px;
+    width: 35px;
+    height: 30px; 
+    border-bottom: 1px solid #000; 
+}
+.teamModal .teamModalBox_desc:after {
+    content: '';
+    width: 40px;
+    height: 1px;
+    position: absolute;
+    left: 100%;
+    top: 13px;
+    background: #000;
+    transform: rotate(45deg);
+    margin-left: -6px;
+}
+.teamModal .teamModalBox_img {
+    margin-left: auto;
+    margin-right: auto;
+}
+.teamModalBox_img {
+    max-width: 300px;
+}
+.teamModalBox_img .teamModalBox_img_design { 
+    border-radius: 160px 160px 0 0;
+    height: 145px; 
+}
+.teamModalBox_img .teamModalBox_image img {
+    max-height: 190px; 
+}
+.teamModalBox_heading {
+    position: relative;
+}
+.teamModalBox_heading .teamModalBox_close {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.teamModalBox_heading .teamModalBox_close a {
+    display: inline-block;
+    color: #48AD96 !important;
+    font-size: 24px;
+    opacity: 1 !important;
+    text-shadow: none !important;
+    cursor: pointer !important;
+    outline: none !important;
+} 
+.teamModal_navbtn {
+    cursor: pointer;
+    background: transparent !important;
+    padding: 0 !important;
+    height: auto !important;
+    width: 40px !important;
+    box-shadow: none !important;
+    transition: all .5s;
+}
+.teamModal_navbtn:hover, .teamModal_navbtn:focus { 
+    outline: 0 !important;
+    color: #000 !important;
+    transform: scale(1.1);
+}  
+.strgsSingle_se3_btmdesc {
+    font-size: 8px;
+    color: rgba(98, 100, 105, 0.7);
+    margin-top: 15px;
+    max-width: 300px;
+    margin-left: auto;
+}
+.contact_sec1_lft .contact_sec1_lft_desc a {
+    color: #46ad96;
+    text-decoration: none;
+    transition: all .5s;
+}
+.contact_sec1_lft .contact_sec1_lft_desc a:hover { 
+    text-decoration: underline; 
+}
+.contact_tabNav ul {
+    display: block;
+    color: #626469;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Titillium-semiBold';
+    letter-spacing: 2px;
+} 
+.contact_tabNav li + li {
+    margin-top: 10px;
+}
+.contact_tabNav li a.active, .contact_tabNav li a.show, .contact_tabNav li a:hover, .contact_tabNav li a:focus {
+    color: #47AD96;
+    text-decoration: none !important;
+}
+.news_popWrap .main_heading h2 {
+    font-size: 40px;
+} 
+.newsPop .modal-dialog {
+    max-width: 650px;
+}
+.newsPop .modal-dialog .modal-body {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+}
+.newsPop .modal-dialog .modal-content {
+    border: 0;
+    border-radius: 0;
+}
+.newsPop .news_popWrap {
+    padding: 35px;
+    position: relative;
+}
+.newsPop .news_popWrap .close {
+    font-size: 25px !important;
+    cursor: pointer;
+    color: #46ad96 !important;
+    box-shadow: none !important;
+    opacity: 1 !important;
+    width: auto !important;
+    height: auto !important;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.news_popWrap .main_heading {
+    margin-bottom: 30px;
+}
+.news_popWrap .form-control {
+    height: 43px !important;
+    border: 1px solid #000 !important;
+    border-radius: 0;
+    padding: 12px 15px;
+    box-shadow: none !important;
+    outline: none !important;
+    font-size: 14px;
+}
+.news_popWrap .wpcf7-not-valid-tip {
+    font-size: 12px;
+    margin-top: 5px;
+}
+.news_popForm div.wpforms-container-full .wpforms-form button[type=submit], .home_contact_form .wpforms-container-full .wpforms-form .btn-style {
+    background: #46ad96 !important;
+} 
+.header .main_nav_top .menu-top-menu-container .sub-menu li {
+    display: block; 
+}
+.header .main_nav_top button.dropdown-toggle, .header .main_nav_top svg.icon.icon-angle-down {
+    display: none;
+}    
+.ftrLinks ul .sub-menu, .ftrLinks .icon-angle-down {
+    display: none !important;
 }
