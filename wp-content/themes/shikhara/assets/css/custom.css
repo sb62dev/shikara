@@ -1492,3 +1492,6 @@ div.wpforms-container-full .wpforms-confirmation-container-full, div[submit-succ
 .ftrLinks ul .sub-menu, .ftrLinks .icon-angle-down {
     display: none !important;
 }
+.strgsSingle_sec1_lft .strgsSingle_se3_btmdesc {
+    max-width: 100%;
+}

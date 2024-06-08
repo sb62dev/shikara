@@ -1,9 +1,9 @@
 <?php
-
 /**
  * Template Name: Our Team
 **/
-get_header();
+
+get_header(); 
 
 ?>
 
@@ -77,7 +77,7 @@ get_header();
                         $next_modal_id = $modal_count < count($modals) ? $modals[$modal_count] : ''; // Next modal ID
                     ?>
                     <div class="teamModal">
-                        <div class="modal" id="<?php echo $modal_id; ?>" tabindex="-1" role="dialog" aria-labelledby="<?php echo $modal_id; ?>Label" aria-hidden="true">
+                        <div class="modal" id="<?php echo $modal_id; ?>" tabindex="-1" role="dialog" aria-labelledby="<?php echo $modal_id; ?>Label" aria-hidden="true" data-backdrop="static" data-keyboard="false">
                             <div class="modal-dialog modal-dialog-centered modal-lg teamModal-animate" role="document">
                                 <div class="modal-content">
                                     <div class="teamModalBox">
@@ -199,7 +199,7 @@ get_header();
                         $sup_next_modal_id = $sup_modal_count < count($sup_modals) ? $sup_modals[$sup_modal_count] : ''; // Next modal ID
                     ?>
                     <div class="teamModal">
-                        <div class="modal" id="<?php echo $sup_modal_id; ?>" tabindex="-1" role="dialog" aria-labelledby="<?php echo $sup_modal_id; ?>Label" aria-hidden="true">
+                        <div class="modal" id="<?php echo $sup_modal_id; ?>" tabindex="-1" role="dialog" aria-labelledby="<?php echo $sup_modal_id; ?>Label" aria-hidden="true" data-backdrop="static" data-keyboard="false">
                             <div class="modal-dialog modal-dialog-centered modal-lg teamModal-animate" role="document">
                                 <div class="modal-content">
                                     <div class="teamModalBox">
@@ -269,15 +269,22 @@ get_header();
 
         <script>
             jQuery(document).ready(function($) {
-                // Listen for clicks on the modal navigation buttons
+                function openModal(targetModal) {
+                    $(targetModal).modal('show');
+                    $('body').addClass('modal-open');
+                }
+
+                function closeModal(currentModal) {
+                    $(currentModal).modal('hide');
+                    $('body').removeClass('modal-open');
+                }
+
                 $('.modal .teamModal_navbtn').on('click', function() {
                     var currentModal = $(this).data('current');
                     var targetModal = $(this).data('target');
-                    $(currentModal).modal('hide');
-                    $('body').removeClass('modal-open');
+                    closeModal(currentModal);
                     $(currentModal).on('hidden.bs.modal', function() {
-                        $(targetModal).modal('show');
-                        $('body').addClass('modal-open');
+                        openModal(targetModal);
                         $(currentModal).off('hidden.bs.modal');
                     });
                 });
@@ -286,17 +293,18 @@ get_header();
                     $('body').removeClass('modal-open');
                 });
 
-                // Handle the scenario where a modal is opened
                 $('.modal').on('shown.bs.modal', function() {
                     $('body').addClass('modal-open');
                 });
-
             });
 
         </script>
 
 
+
     </div>
 </div>
 
-<?php get_footer(); ?>
+<?php 
+get_footer();
+?>

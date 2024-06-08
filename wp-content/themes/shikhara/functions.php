@@ -717,3 +717,16 @@ require get_parent_theme_file_path( '/inc/icon-functions.php' );
  * Block Patterns.
  */
 require get_template_directory() . '/inc/block-patterns.php';
+
+
+function password_protect_page($post_id, $password) {
+    // Ensure the post ID is valid
+    if (get_post($post_id)) {
+        // Update the post's password
+        $post_data = array(
+            'ID' => $post_id,
+            'post_password' => $password,
+        );
+        wp_update_post($post_data);
+    }
+} 

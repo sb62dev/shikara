@@ -2,7 +2,16 @@
 /**
  * The header for our theme 
  */
-?>
+
+ 
+$protected_pages = array(141, 386, 8, 201, 242, 279, 320, 340); 
+
+if (in_array(get_the_ID(), $protected_pages)) {
+    password_protect_page(get_the_ID(), 'shikhara2024'); 
+}  
+
+?> 
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js no-svg">
 
@@ -43,7 +52,17 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <?php wp_body_open(); ?>
+    <?php wp_body_open(); ?> 
+     
+    <?php
+        // Check if password is required and display form if needed
+        if (post_password_required()) {
+            echo '<div class="passwordForm padd-row text-center">'; // Example inline style for layout
+            echo get_the_password_form();
+            echo '</div>';
+            exit;
+        }
+    ?>
 
 
     <header class="header sticky-header">

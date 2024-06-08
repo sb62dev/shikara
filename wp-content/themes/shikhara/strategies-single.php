@@ -31,6 +31,9 @@ get_header();
                                         <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                                     </div>
                                     <?php endif; ?>
+                                    <?php if( get_field('strgsSingle_sec1_img_btmdesc') ): ?>
+                                    <div class="strgsSingle_se3_btmdesc"> <?php the_field('strgsSingle_sec1_img_btmdesc'); ?> </div>
+                                    <?php endif; ?>
                                 </div>
                             </div>
                         </div>
@@ -138,7 +141,7 @@ get_header();
                                     <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                                 </div>
                                 <?php endif; ?>
-                                
+
                                 <?php if( get_field('strgs_sec3_desc_img2') ): ?>
                                 <div class="strgsSingle_se3_btmdesc"> <?php the_field('strgs_sec3_desc_img2'); ?> </div>
                                 <?php endif; ?>
