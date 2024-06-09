@@ -267,6 +267,7 @@ get_header();
         </section>
 
 
+        <!--
         <script>
             jQuery(document).ready(function($) {
                 function openModal(targetModal) {
@@ -282,10 +283,47 @@ get_header();
                 $('.modal .teamModal_navbtn').on('click', function() {
                     var currentModal = $(this).data('current');
                     var targetModal = $(this).data('target');
-                    closeModal(currentModal);
-                    $(currentModal).on('hidden.bs.modal', function() {
+
+                    $(currentModal).one('hidden.bs.modal', function() {
                         openModal(targetModal);
-                        $(currentModal).off('hidden.bs.modal');
+                    });
+
+                    closeModal(currentModal);
+                });
+
+                $('.modal').on('hidden.bs.modal', function() {
+                    $('body').removeClass('modal-open');
+                });
+
+                $('.modal').on('shown.bs.modal', function() {
+                    $('body').addClass('modal-open');
+                });
+            });
+
+        </script>
+-->
+
+        <script>
+            jQuery(document).ready(function($) {
+                $("div[id^='teamMemberModal'], div[id^='teamSupportModal']").each(function() {
+                    var currentModal = $(this);
+
+                    // Click next
+                    currentModal.find('.next_btn').click(function() {
+                        currentModal.modal('hide');
+                        currentModal.on('hidden.bs.modal', function() {
+                            currentModal.nextAll("div[id^='teamMemberModal'], div[id^='teamSupportModal']").first().modal('show');
+                            currentModal.off('hidden.bs.modal');
+                        });
+                    });
+
+                    // Click prev
+                    currentModal.find('.prev_btn').click(function() {
+                        currentModal.modal('hide');
+                        currentModal.on('hidden.bs.modal', function() {
+                            currentModal.prevAll("div[id^='teamMemberModal'], div[id^='teamSupportModal']").first().modal('show');
+                            currentModal.off('hidden.bs.modal');
+                        });
                     });
                 });
 
@@ -299,8 +337,6 @@ get_header();
             });
 
         </script>
-
-
 
     </div>
 </div>
