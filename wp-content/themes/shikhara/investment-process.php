@@ -84,11 +84,19 @@ get_header();
                                                     </div>
                                                     <?php endif; ?>
                                                 </div>
+                                                <?php if( get_field('invst_page_sec2_card_white_greenBG') ): ?>
+                                                <div class="investprc_sec2_cardBox_inWhite_greenBG">
+                                                    <h4><?php the_field('invst_page_sec2_card_white_greenBG'); ?></h4>
+                                                </div>
+                                                <?php endif; ?>
                                             </div>
                                         </div>
                                         <div class="col-lg-8">
                                             <div class="investprc_sec2_cardBox_rght">
                                                 <div class="investprc_sec2_cardBox_in investprc_sec2_cardBox_inBlue">
+                                                    <div class="investprc_iconLft">
+                                                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/investprcs_icon_white.svg" alt="icon">
+                                                    </div>
                                                     <?php if( get_field('invst_page_sec2_card_blue_title') ): ?>
                                                     <h5><?php the_field('invst_page_sec2_card_blue_title'); ?></h5>
                                                     <?php endif; ?>

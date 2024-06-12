@@ -1187,8 +1187,8 @@ div.wpforms-container-full .wpforms-confirmation-container-full, div[submit-succ
 }
 .investprc_icon {
     text-align: center;
-    margin-top: -60px;
-    padding-bottom: 20px;
+    margin-top: -50px;
+    padding-bottom: 15px;
 }
 .investprc_sec2_cardBox_inGrey_box h5 {
     letter-spacing: 0.5px;
@@ -1404,7 +1404,7 @@ div.wpforms-container-full .wpforms-confirmation-container-full, div[submit-succ
     transform: scale(1.1);
 }  
 .strgsSingle_se3_btmdesc {
-    font-size: 8px;
+    font-size: 9px;
     color: rgba(98, 100, 105, 0.7);
     margin-top: 15px;
     max-width: 300px;
@@ -1494,4 +1494,37 @@ div.wpforms-container-full .wpforms-confirmation-container-full, div[submit-succ
 }
 .strgsSingle_sec1_lft .strgsSingle_se3_btmdesc {
     max-width: 100%;
+}
+.strgs_sec1_img img {
+    max-height: 200px;
+}
+.strgsSingle_se3_img img {
+    width: 100%;
+}
+.investprc_sec2_cardBox_inWhite_greenBG h4 {
+    font-size: 19px;
+    color: #fff;
+    margin: 0;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    font-family: 'Titillium-semiBold';
+}
+.investprc_sec2_cardBox_inWhite_greenBG {
+    position: absolute;
+    bottom: 0;
+    background: #46ad96;
+    left: 0;
+    padding: 30px;
+    color: #fff;
+}
+.investprc_iconLft {
+    position: absolute; 
+    left: -16px;
+    top: 30px;
+}
+.investprc_iconLft img {
+    width: 40px;
+}
+.investprc_icon img {
+    width: 40px;
 }

@@ -172,6 +172,9 @@ p {
 .team_cardList [class*='col-'] {
     padding: 0 25px;
 }
+.strgs_sec1_img {
+    margin-left: 50px;
+}
     
 }    
 
@@ -186,6 +189,15 @@ p {
     bottom: -213px;
 }
     
+}
+
+@media screen and ( min-width: 1700px ) {
+    
+.header_main, .ftrMain {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
+
 }
 
 @media screen and (max-width: 1599px) {
@@ -532,6 +544,16 @@ div#collapsibleNavbar {
 .fixdNav-mid ul li .sub-menu li a {
     font-size: 12px;
     padding: 10px 0;
+}
+.investprc_sec2_cardBox_inWhite_greenBG {
+    position: static;
+    margin-top: 20px;
+} 
+.investprc_sec2_cardBox_inWhite_greenBG h4 {
+    font-size: 17px;
+}
+.investprc_iconLft {
+    display: none;
 }
     
 } 
@@ -904,7 +926,13 @@ html, body, .coming_soon_wrapper{
 .teamModalBox_heading, .teamModalBox_row [class*='col-'] {
     position: static;
 }
-    
+.investprc_sec2_cardBox_inWhite_greenBG {
+    margin-top: 0;
+}
+.investprc_sec2_cardBox_inWhite_greenBG{
+    padding: 20px;
+}
+
 }  
 
 @media screen and ( max-width: 374px ){
