@@ -111,8 +111,8 @@ get_header();
                                                         <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/investprcs_icon.svg" alt="icon">
                                                     </div>
                                                     <div class="row">
-                                                        <div class="col-md-6">
-                                                            <div class="investprc_sec2_cardBox_inGrey_box">
+                                                        <div class="col-md-12">
+                                                            <div class="investprc_sec2_cardBox_inGrey_box investprc_sec2_cardBox_inGreyBox_big">
                                                                 <?php if( get_field('invst_page_sec2_card_grey1_title') ): ?>
                                                                 <h5><?php the_field('invst_page_sec2_card_grey1_title'); ?></h5>
                                                                 <?php endif; ?>
@@ -123,18 +123,20 @@ get_header();
                                                                 <?php endif; ?>
                                                             </div>
                                                         </div>
+<!--
                                                         <div class="col-md-6">
                                                             <div class="investprc_sec2_cardBox_inGrey_box">
-                                                                <?php if( get_field('invst_page_sec2_card_grey2_title') ): ?>
-                                                                <h5><?php the_field('invst_page_sec2_card_grey2_title'); ?></h5>
-                                                                <?php endif; ?>
-                                                                <?php if( get_field('invst_page_sec2_card_grey2_desc') ): ?>
+                                                                <?//php if( get_field('invst_page_sec2_card_grey2_title') ): ?>
+                                                                <h5><?//php the_field('invst_page_sec2_card_grey2_title'); ?></h5>
+                                                                <?//php endif; ?>
+                                                                <?//php if( get_field('invst_page_sec2_card_grey2_desc') ): ?>
                                                                 <div class="investprc_sec2_cardBox_inGrey_box_desc">
-                                                                    <?php the_field('invst_page_sec2_card_grey2_desc'); ?>
+                                                                    <?//php the_field('invst_page_sec2_card_grey2_desc'); ?>
                                                                 </div>
-                                                                <?php endif; ?>
+                                                                <?//php endif; ?>
                                                             </div>
                                                         </div>
+-->
                                                     </div>
                                                 </div>
                                             </div>

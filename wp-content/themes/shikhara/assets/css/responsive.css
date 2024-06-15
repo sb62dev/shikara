@@ -197,6 +197,9 @@ p {
     padding-left: 25px !important;
     padding-right: 25px !important;
 }
+.investprc_sec2_right {
+    margin-left: 3%;
+}
 
 }
 
@@ -554,10 +557,7 @@ div#collapsibleNavbar {
 } 
 .investprc_sec2_cardBox_inWhite_greenBG h4 {
     font-size: 17px;
-}
-.investprc_iconLft {
-    display: none;
-}
+} 
 .cmnPageSec h1 {
     font-size: 28px;
 }
@@ -776,6 +776,10 @@ html, body, .coming_soon_wrapper{
     margin-bottom: 12px;
     padding-bottom: 12px;
 }
+.strgs_featuresBox h4 {
+    margin-bottom: 9px;
+    padding-bottom: 9px;
+}
 .value_box p {
     margin: 0;
     font-size: 12px;
@@ -783,8 +787,14 @@ html, body, .coming_soon_wrapper{
 .values_iconllist > .row {
     margin-bottom: -45px;
 }
-.values_iconllist [class*='col-'], .strgs_featuresBox_list [class*='col-'], .location_card [class*='col-'], .team_cardList [class*='col-'] {
+.values_iconllist [class*='col-'], .location_card [class*='col-'], .team_cardList [class*='col-'] {
     margin-bottom: 45px;
+}
+.strgs_featuresBox_list [class*='col-']{
+    margin-bottom: 25px;
+}
+.strgs_featuresBox_list [class*='col-']:last-child {
+    margin-bottom: 0;
 }
 .home_contactIn .main_heading {
     margin-bottom: 20px !important;
@@ -942,8 +952,45 @@ html, body, .coming_soon_wrapper{
 }
 .investprc_sec2_cardBox_inWhite_greenBG{
     padding: 20px;
+} 
+.strgsSingle_mobPad{
+    padding-top: 0 !important;
 }
-
+.strgsSingle_sec2_right.mtMob25 {
+    margin-top: 8px !important;
+} 
+.investprc_sec2_cardBox_lft {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+.investprc_sec2_cardBox_inGreyBox_big ul { 
+    padding-left: 12px;
+} 
+.investprc_sec2_cardBox_inGreyBox_big ul li {
+    line-height: 1.1;
+    margin-bottom: 8px;
+}
+.investprc_sec2_cardBox_inGreyBox_big ul li:nth-child(odd) {
+    width: 45%;
+    margin-left: 0;
+}
+.investprc_sec2_cardBox_inGreyBox_big ul li:nth-child(even) {
+    width: 45%;
+    margin-left: 10%;
+}
+.investprc_iconLft {
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+    top: -18px;
+}
+.investprc_iconLft img {
+    width: 51px;
+}
+.investprc_sec2_cardBox_inBlue {
+    padding-top: 40px;
+}
+    
 }  
 
 @media screen and ( max-width: 374px ){

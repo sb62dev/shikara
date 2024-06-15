@@ -1524,6 +1524,7 @@ div.wpforms-container-full .wpforms-confirmation-container-full, div[submit-succ
     left: 0;
     padding: 30px;
     color: #fff;
+    width: 100%;
 }
 .investprc_iconLft {
     position: absolute; 
@@ -1544,4 +1545,20 @@ div.wpforms-container-full .wpforms-confirmation-container-full, div[submit-succ
 }
 .home_news_contact .wpforms-field-large, .home_news_contact .wpforms-field-medium {
     background: transparent !important;
+} 
+.investprc_sec2_cardBox_inGreyBox_big h5 {
+    border: 0;
+    padding-bottom: 0 !important;
+}
+.investprc_sec2_cardBox_inGreyBox_big ul {
+    list-style: disc;
+    margin-left: 0 !important;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 5px;
+}
+.investprc_sec2_cardBox_inGreyBox_big ul li {
+    width: 48%;
+    list-style: disc;
+    margin-left: 2%;
 } 

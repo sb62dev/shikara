@@ -51,7 +51,7 @@ get_header();
             </div>
         </section>
 
-        <section class="strgsSingle_sec2 padd-row">
+        <section class="strgsSingle_sec2 strgsSingle_mobPad padd-row">
             <div class="container">
                 <div class="strgsSingle_inner">
                     <div class="row">
@@ -92,7 +92,7 @@ get_header();
             </div>
         </section>
 
-        <section class="strgsSingle_se3 padd-row">
+        <section class="strgsSingle_se3 strgsSingle_mobPad padd-row">
             <div class="container">
                 <div class="strgsSingle_se3_inner">
                     <div class="row">
