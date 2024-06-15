@@ -17,11 +17,15 @@
 
 get_header(); ?>
 
-<div class="wrap">
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+<div class="cmnPage">
+    <div class="container_outer container_outer_pb">
 
-			<?php
+        <?php get_template_part('template-parts/banner'); ?>
+
+        <section class="cmnPageSec padd-row">
+            <div class="container">
+
+                <?php
 			while ( have_posts() ) :
 				the_post();
 
@@ -32,12 +36,14 @@ get_header(); ?>
 					comments_template();
 				endif;
 
-			endwhile; // End the loop.
+			endwhile;  
 			?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
-</div><!-- .wrap -->
+            </div>
+        </section>
+
+    </div>
+</div>
 
 <?php
 get_footer();

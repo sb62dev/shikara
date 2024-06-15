@@ -302,8 +302,11 @@ p {
     max-width: 100%;
     padding: 0 35px;
 }
-.padd-row, footer.footer {
+.padd-row {
     padding: 80px 0;
+}
+footer.footer {
+    padding-top: 60px;
 }
 .cmnPadd{
     padding: 100px 0;
@@ -555,6 +558,9 @@ div#collapsibleNavbar {
 .investprc_iconLft {
     display: none;
 }
+.cmnPageSec h1 {
+    font-size: 28px;
+}
     
 } 
 
@@ -619,9 +625,14 @@ body {
     font-size: 28px;
 } 
 footer.footer { 
-    padding: 40px 0;
+    padding: 40px 0 25px;
     font-size: 13px;
     background-position: bottom right;
+}
+.ftrCprght { 
+    font-size: 11px; 
+    margin-top: 25px;
+    padding-top: 25px; 
 }
 .ftrMain [ class*='col-' ] {
     margin-bottom: 40px;

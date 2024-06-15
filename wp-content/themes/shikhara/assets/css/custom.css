@@ -528,12 +528,20 @@ header.Sticky-fixed .logo .logotxt {
     text-decoration: none;
 }
 footer.footer {
-    background-color: #1E4262; 
+    background-color: #1E4262;
     background-repeat: no-repeat;
     background-position: top right;
     background-size: 100%;
-    padding: 100px 25px;
+    padding: 80px 25px 40px;
     font-size: 14px;
+}
+.ftrCprght {
+    text-align: left;
+    font-size: 13px;
+    color: #fff;
+    margin-top: 35px;
+    padding-top: 35px;
+    border-top: 1px solid rgb(255 255 255 / 8%);
 }
 .ftrMenu-list li {
     display: inline-block;
@@ -1528,3 +1536,12 @@ div.wpforms-container-full .wpforms-confirmation-container-full, div[submit-succ
 .investprc_icon img {
     width: 40px;
 }
+.cmnPageSec h1 {
+    font-size: 36px;
+}
+.home_news_contact {
+    margin-bottom: 25px;
+}
+.home_news_contact .wpforms-field-large, .home_news_contact .wpforms-field-medium {
+    background: transparent !important;
+} 

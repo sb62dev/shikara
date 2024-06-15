@@ -260,13 +260,14 @@ get_header();
              </div>
          </section>
 
-         <section class="home_news bgBlueLight padd-row">
+         <section class="home_news bgBlueLight padd-row home_news_contact">
              <div class="container">
                  <div class="home_newsIn">
                      <div class="row">
                          <div class="col-md-9">
                              <div class="home_news_lft" data-aos="fade-up">
                                  <div class="home_news_lftBox">
+<!--
                                      <div class="main_heading">
                                          <?php if( get_field('news_sub_title') ): ?>
                                          <div class="subHeading subHeadingIcon"> <?php the_field('news_sub_title'); ?> </div>
@@ -319,6 +320,23 @@ get_header();
                                          <a href="<?php the_field('news_btnLink'); ?>" class="btn-link"> <?php the_field('news_btnTxt'); ?> </a>
                                      </div>
                                      <?php endif; ?>
+-->
+                                     
+                                     <div class="home_contact_heading" data-aos="fade-up">
+                                 <div class="main_heading">
+                                     <?php if( get_field('home_cnt_subtitle') ): ?>
+                                     <div class="subHeading subHeadingIcon"> <?php the_field('home_cnt_subtitle'); ?> </div>
+                                     <?php endif; ?>
+                                     <?php if( get_field('home_cnt_title') ): ?>
+                                     <h2 class="h2"> <?php the_field('home_cnt_title'); ?> </h2>
+                                     <?php endif; ?>
+                                 </div>
+                             </div>
+                                     
+                                     <div class="home_contact_form">
+                                 <?php echo do_shortcode('[wpforms id="116" title="false"]'); ?>
+                             </div>
+                                     
                                  </div>
                              </div>
                          </div>
@@ -356,6 +374,7 @@ get_header();
              </div>
          </section>
 
+<!--
          <section class="home_contact padd-row">
              <div class="container">
                  <div class="home_contactIn">
@@ -363,24 +382,25 @@ get_header();
                          <div class="col-xl-3 col-md-4">
                              <div class="home_contact_heading" data-aos="fade-up">
                                  <div class="main_heading">
-                                     <?php if( get_field('home_cnt_subtitle') ): ?>
-                                     <div class="subHeading subHeadingIcon"> <?php the_field('home_cnt_subtitle'); ?> </div>
-                                     <?php endif; ?>
-                                     <?php if( get_field('home_cnt_title') ): ?>
-                                     <h2 class="h2"> <?php the_field('home_cnt_title'); ?> </h2>
-                                     <?php endif; ?>
+                                     <?//php if( get_field('home_cnt_subtitle') ): ?>
+                                     <div class="subHeading subHeadingIcon"> <?//php the_field('home_cnt_subtitle'); ?> </div>
+                                     <?//php endif; ?>
+                                     <?//php if( get_field('home_cnt_title') ): ?>
+                                     <h2 class="h2"> <?//php the_field('home_cnt_title'); ?> </h2>
+                                     <?//php endif; ?>
                                  </div>
                              </div>
                          </div>
                          <div class="col-xl-9 col-md-8">
                              <div class="home_contact_form">
-                                 <?php echo do_shortcode('[wpforms id="116" title="false"]'); ?>
+                                 <?//php echo do_shortcode('[wpforms id="116" title="false"]'); ?>
                              </div>
                          </div>
                      </div>
                  </div>
              </div>
          </section>
+-->
 
      </div>
 

@@ -44,7 +44,7 @@
                         <?php  
                             wp_nav_menu(
                                 array(
-                                    'theme_location' => 'top',
+                                    'theme_location' => 'social',
                                     'menu_class'     => 'd-block'
                                 )
                             );
@@ -71,6 +71,9 @@
                 </div>
 
             </div>
+        </div>
+        <div class="ftrCprght">
+           <p class="mb-0"> © 2024 Shikhara Investment Management LP. All rights reserved. </p>
         </div>
     </div>
 </footer>

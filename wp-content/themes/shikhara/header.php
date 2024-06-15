@@ -4,7 +4,7 @@
  */
 
  
-$protected_pages = array(141, 386, 8, 201, 242, 279, 320, 340); 
+$protected_pages = array(141, 386, 8, 201, 242, 279, 320, 340, 510); 
 
 if (in_array(get_the_ID(), $protected_pages)) {
     password_protect_page(get_the_ID(), 'shikhara2024'); 
@@ -54,7 +54,6 @@ if (in_array(get_the_ID(), $protected_pages)) {
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
 
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-61MGT5YG29"></script>
     <script>
@@ -78,7 +77,6 @@ if (in_array(get_the_ID(), $protected_pages)) {
             exit;
         }
     ?>
-
 
     <header class="header sticky-header">
         <div class="container">

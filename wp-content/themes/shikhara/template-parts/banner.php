@@ -1,3 +1,4 @@
+<?php if( get_field('hero_title') ): ?>
 <section class="innerBanner" style="background-color:<?php the_field('hero_bg_color'); ?>">
     <div class="container">
         <div class="innerBanner_wrap" data-aos="fade-up">
@@ -21,12 +22,11 @@
                 </ul>
             </div>
             <?php endif; ?>
-            <?php if( get_field('hero_title') ): ?>
             <h1 class="h1 mb-0"> <?php the_field('hero_title'); ?> </h1>
-            <?php endif; ?>
         </div>
     </div>
 </section>
+<?php endif; ?>
 
 <script>
     function setBackgroundImage() {
