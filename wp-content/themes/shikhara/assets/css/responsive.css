@@ -550,10 +550,6 @@ div#collapsibleNavbar {
 .fixdNav-mid ul li .sub-menu li a {
     font-size: 12px;
     padding: 10px 0;
-}
-.investprc_sec2_cardBox_inWhite_greenBG {
-    position: static;
-    margin-top: 20px;
 } 
 .investprc_sec2_cardBox_inWhite_greenBG h4 {
     font-size: 17px;
@@ -600,6 +596,9 @@ div#collapsibleNavbar {
 .teamModalBox_heading .teamModalBox_close {
     right: 0;
     top: -20px;
+}
+.investprc_sec2_cardBox_inGreyBox_big ul li {
+    font-size: 13px;
 }
     
 } 
@@ -990,6 +989,10 @@ html, body, .coming_soon_wrapper{
 .investprc_sec2_cardBox_inBlue {
     padding-top: 40px;
 }
+.investprc_sec2_cardBox_inWhite_greenBG {
+    position: static;
+    margin-top: 20px;
+} 
     
 }  
 

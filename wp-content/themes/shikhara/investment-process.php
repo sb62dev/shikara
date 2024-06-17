@@ -58,7 +58,7 @@ get_header();
             <div class="container">
                 <div class="investprc_sec2_inner">
                     <div class="row">
-                        <div class="col-md-4 col-xl-3">
+                        <div class="col-lg-4 col-xl-3">
                             <div class="sub_heading pr-xl-4" data-aos="fade-up">
                                 <?php if( get_field('invst_page_sec2_title') ): ?>
                                 <h3><?php the_field('invst_page_sec2_title'); ?></h3>
@@ -68,11 +68,11 @@ get_header();
                                 <?php endif; ?>
                             </div>
                         </div>
-                        <div class="col-md-8 col-xl-9">
+                        <div class="col-lg-8 col-xl-9">
                             <div class="investprc_sec2_right mtMob25" data-aos="fade-up">
                                 <div class="investprc_sec2_cardBox">
                                     <div class="row no-gutters">
-                                        <div class="col-lg-4 investprc_sec2_cardBox_bgWhite">
+                                        <div class="col-md-4 investprc_sec2_cardBox_bgWhite">
                                             <div class="investprc_sec2_cardBox_lft">
                                                 <div class="investprc_sec2_cardBox_in investprc_sec2_cardBox_inWhite">
                                                     <?php if( get_field('invst_page_sec2_card_white_title') ): ?>
@@ -91,7 +91,7 @@ get_header();
                                                 <?php endif; ?>
                                             </div>
                                         </div>
-                                        <div class="col-lg-8">
+                                        <div class="col-md-8">
                                             <div class="investprc_sec2_cardBox_rght">
                                                 <div class="investprc_sec2_cardBox_in investprc_sec2_cardBox_inBlue">
                                                     <div class="investprc_iconLft">

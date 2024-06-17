@@ -4,11 +4,11 @@
  */
 
  
-$protected_pages = array(141, 386, 8, 201, 242, 279, 320, 340, 510); 
-
-if (in_array(get_the_ID(), $protected_pages)) {
-    password_protect_page(get_the_ID(), 'shikhara2024'); 
-}  
+//$protected_pages = array(141, 386, 8, 201, 242, 279, 320, 340, 510); 
+//
+//if (in_array(get_the_ID(), $protected_pages)) {
+//    password_protect_page(get_the_ID(), 'shikhara2024'); 
+//}  
 
 ?>
 
@@ -52,31 +52,19 @@ if (in_array(get_the_ID(), $protected_pages)) {
 </head>
 
 <body <?php body_class(); ?>>
-    <?php wp_body_open(); ?>
+    <?php wp_body_open(); ?> 
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-61MGT5YG29"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-61MGT5YG29');
-
-    </script>
-
-    <?php
+<!--
+    <?//php
         // Check if password is required and display form if needed
-        if (post_password_required()) {
-            echo '<div class="passwordForm padd-row text-center">'; // Example inline style for layout
-            echo get_the_password_form();
-            echo '</div>';
-            exit;
-        }
-    ?>
+//        if (post_password_required()) {
+//            echo '<div class="passwordForm padd-row text-center">'; // Example inline style for layout
+//            echo get_the_password_form();
+//            echo '</div>';
+//            exit;
+//        }
+   // ?>
+-->
 
     <header class="header sticky-header">
         <div class="container">
