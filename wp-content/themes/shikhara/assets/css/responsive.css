@@ -175,6 +175,12 @@ p {
 .strgs_sec1_img {
     margin-left: 50px;
 }
+.ftrMenu-list li {
+    width: 42%;
+}
+.ftrMenu-list li:nth-child( even ) {
+    margin-left: 14%;
+}
     
 }    
 

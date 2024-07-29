@@ -35,12 +35,12 @@
     <div class="container">
         <div class="ftrMain">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 col-xl-3">
                     <div class="ftr-logo">
                         <a href="<?php echo get_home_url(); ?>"> <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo_white.svg" alt="logo" width="200"> </a>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-xl-7">
                     <div class="ftrLinks ftrMenu-list">
                         <?php  
                             wp_nav_menu(
@@ -52,9 +52,8 @@
                         ?>
                     </div>
                 </div>
-
-                <div class="col-md-3">
-                    <div class="ftrSocial">
+                <div class="col-md-3 col-xl-2">
+                    <div class="ftrSocial text-md-right">
                         <ul>
                             <li><a target="_blank" rel="noopener" href="https://www.linkedin.com/company/shikhara-investments/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                         </ul>

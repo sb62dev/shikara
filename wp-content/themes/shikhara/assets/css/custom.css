@@ -534,6 +534,7 @@ footer.footer {
     background-size: 100%;
     padding: 80px 25px 40px;
     font-size: 14px;
+    font-family: 'Titillium-regular';
 }
 .ftrCprght {
     text-align: left;
@@ -563,9 +564,8 @@ footer.footer {
     position: relative;
     text-decoration: none;
     transition: all .3s;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-family: 'Titillium-semiBold';
+    text-transform: uppercase; 
+    font-family: 'Titillium-regular';
     letter-spacing: 1.5px;
     font-size: 12px;
 }
