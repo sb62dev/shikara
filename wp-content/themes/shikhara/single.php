@@ -12,38 +12,78 @@
 
 get_header(); ?>
 
-<div class="wrap">
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+<div class="singleIngsightsPage">
+    <div class="container_outer container_outer_pb"> 
 
-			<?php
-			// Start the Loop.
-			while ( have_posts() ) :
-				the_post();
+        <?php
+            // Start the Loop.
+            while ( have_posts() ) :
+                the_post();
+                ?>
 
-				get_template_part( 'template-parts/post/content', get_post_format() );
-
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-
-				the_post_navigation(
-					array(
-						/* translators: Hidden accessibility text. */
-						'prev_text' => '<span class="screen-reader-text">' . __( 'Previous Post', 'twentyseventeen' ) . '</span><span aria-hidden="true" class="nav-subtitle">' . __( 'Previous', 'twentyseventeen' ) . '</span> <span class="nav-title"><span class="nav-title-icon-wrapper">' . twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '</span>%title</span>',
-						/* translators: Hidden accessibility text. */
-						'next_text' => '<span class="screen-reader-text">' . __( 'Next Post', 'twentyseventeen' ) . '</span><span aria-hidden="true" class="nav-subtitle">' . __( 'Next', 'twentyseventeen' ) . '</span> <span class="nav-title">%title<span class="nav-title-icon-wrapper">' . twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ) . '</span></span>',
-					)
-				);
-
-			endwhile; // End the loop.
-			?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-	<?php get_sidebar(); ?>
-</div><!-- .wrap -->
+				<section class="innerBanner">
+					<div class="container">
+						<div class="innerBanner_wrap" data-aos="fade-up"> 
+							<div class="banner_bredcrumb">
+								<ul> 
+									<li> 
+										<a href="/insights/"><span>< Back</span></a>  
+									</li> 
+								</ul>
+							</div> 
+							<div class="insight_cate">
+								<?php 
+									$categories = get_the_category();
+									if ( ! empty( $categories ) ) {
+										foreach ( $categories as $category ) {
+											echo '<span>' . esc_html( $category->name ) . '</span> ';
+										}
+									}
+								?>
+							</div>
+							<h1 class="h1 mb-0"> <?php the_title(); ?></h1>
+							<span class="insight_date"><?php echo get_the_date(); ?></span>
+						</div>
+					</div>
+				</section>
+                
+                <div class="singleInsight">
+                    <div class="container">
+						<!-- Display the featured image -->
+						<?php if ( has_post_thumbnail() ) : ?>
+							<div class="featured-image">
+								<?php the_post_thumbnail('full'); ?>
+							</div>
+						<?php endif; ?>
+						<div class="singleContentWrap">
+							<?php the_content(); ?>
+						</div>
+                        <div class="singleBtmContent">
+							<?php
+								wp_link_pages(
+									array(
+										'before' => '<div class="page-links">' . __( 'Pages:', 'your-theme-textdomain' ),
+										'after'  => '</div>',
+									)
+								);
+							?>
+						</div>
+						<div class="singleftrNav">
+						<?php  
+							the_post_navigation(
+								array(
+									'prev_text' => '<span class="screen-reader-text">' . __( 'Previous Post', 'your-theme-textdomain' ) . '</span><span aria-hidden="true" class="nav-subtitle">' . __( 'Previous', 'your-theme-textdomain' ) . '</span> <span class="nav-title"><span class="nav-title-icon-wrapper">' . twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '</span>%title</span>',
+									'next_text' => '<span class="screen-reader-text">' . __( 'Next Post', 'your-theme-textdomain' ) . '</span><span aria-hidden="true" class="nav-subtitle">' . __( 'Next', 'your-theme-textdomain' ) . '</span> <span class="nav-title">%title<span class="nav-title-icon-wrapper">' . twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ) . '</span></span>',
+								)
+							);
+						?>
+						</div>
+                    </div>
+                </div>
+			<?php endwhile; 
+        ?> 
+    </div>
+</div>
 
 <?php
 get_footer();

@@ -563,6 +563,41 @@ div#collapsibleNavbar {
 .cmnPageSec h1 {
     font-size: 28px;
 }
+.post_card .post_card_body h4 {
+    font-size: 20px;
+    margin: 12px 0 12px;
+    color: #28283c;
+}
+.post_card .post_card_body { 
+    font-size: 14px; 
+}
+.post_card .insight_cate span {
+    font-size: 9px;
+}
+.insightsSec_tabs ul {
+    padding-bottom: 8px; 
+    margin-bottom: 40px;
+}
+.insightsSec_tabs ul li a {
+    font-size: 14px;
+}
+.post_card_feature .post_card_body {
+    padding-left: 0;
+}
+.post_card_feature.post_card .post_card_body h4 {
+    font-size: 22px;
+}
+.post_card_feature .insight_para_block { 
+    padding-left: 20px; 
+    font-size: 15px;
+    margin: 20px 0;
+}
+.post_card_feature.post_card .post_card_img img {
+    height: 290px;
+}
+.post_card .post_card_img img { 
+    height: 215px; 
+}
     
 } 
 
@@ -999,6 +1034,18 @@ html, body, .coming_soon_wrapper{
     position: static;
     margin-top: 20px;
 } 
+.post_card_feature.post_card .post_card_img img {
+    height: 200px;
+}
+.post_card_feature.post_card .post_card_body h4 {
+    font-size: 21px;
+}
+.insightsSec_tabs ul li + li {
+    margin-left: 12px;
+}
+.insightsSec_tabs ul li a {
+    font-size: 12px;
+}
     
 }  
 

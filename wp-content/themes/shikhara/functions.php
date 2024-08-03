@@ -730,3 +730,10 @@ function password_protect_page($post_id, $password) {
         wp_update_post($post_data);
     }
 } 
+
+function add_x_robots_tag_header() {
+    if (is_user_logged_in() && basename($_SERVER['REQUEST_URI']) == 'Shikhara_Investment_Management_August_2024.pdf') {
+        header('X-Robots-Tag: noindex, nofollow', true);
+    }
+}
+add_action('send_headers', 'add_x_robots_tag_header');
