@@ -1754,3 +1754,47 @@ div.wpforms-container-full .wpforms-confirmation-container-full, div[submit-succ
 .singleftrNav .nav-links a:hover:after {
     border-color: #1e4262;
 }
+.singleContentWrap h4 {
+    font-size: 20px;
+    margin: 30px 0 10px;
+}
+.singleContentWrap p {
+    margin-bottom: 20px;
+}
+.blog_photo_wrap {
+    margin: 30px 0;
+}
+.blog_photo_wrap .blog_photo_btmTxt {
+    font-size: 13px;
+    margin-top: 7px;
+    font-style: italic;
+}
+.blog_disclaimer {
+    margin-top: 75px;
+    color: #616368;
+    font-size: 13px;
+}
+.blog_disclaimer h4 {
+    font-size: 15px;
+    color: #616368;
+}
+.blog_disclaimer p {
+    margin-bottom: 12px;
+}
+.singleContentWrap h4.greenTxt {
+    color: #47AD96;
+}
+.singleContentWrap ul, .singleContentWrap ol {
+    margin: 25px 0;
+}
+.singleContentWrap ul {
+    list-style: disc;
+    margin-left: 25px;
+}
+.singleContentWrap li {
+    margin-bottom: 15px;
+}
+.singleContentWrap li strong {
+    display: block;
+    margin-bottom: 2px;
+}

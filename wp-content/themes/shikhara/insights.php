@@ -60,7 +60,7 @@ function render_post_card($post_id) {
         <section class="insightFeature padd-row pb-0">
             <div class="container"> 
                 <div class="insightFeature_inner">
-                    <div class="insightFeature_heading"> 
+                    <div class="insightFeature_heading" data-aos="fade-up"> 
                         <div class="sub_heading">
                             <h3>FEATURED INSIGHT</h3>
                         </div> 
@@ -72,12 +72,12 @@ function render_post_card($post_id) {
                     <a href="<?php echo get_permalink($featured_post_id); ?>" class="post_card post_card_feature">
                         <div class="row align-items-center">   
                             <div class="col-md-6"> 
-                                <div class="post_card_img">
+                                <div class="post_card_img" data-aos="fade-up">
                                     <?php echo get_the_post_thumbnail($featured_post_id, 'full'); ?>
                                 </div>
                             </div>
                             <div class="col-md-6"> 
-                                <div class="post_card_body">
+                                <div class="post_card_body" data-aos="fade-up">
                                     <div class="insight_cate">
                                         <?php 
                                         $categories = get_the_category($featured_post_id);
@@ -106,7 +106,7 @@ function render_post_card($post_id) {
         <section class="insightsSec padd-row">
             <div class="container"> 
                 <div class="insightsSec_inner">
-                    <div class="insightsSec_tabs"> 
+                    <div class="insightsSec_tabs" data-aos="fade-up"> 
                     <ul class="nav nav-pills">
                         <li class="nav-item">
                             <a class="nav-link active" data-toggle="tab" href="#blogall">All</a>
@@ -122,7 +122,7 @@ function render_post_card($post_id) {
                         </li>
                     </ul>
                     </div> 
-                    <div class="insightsSec_content"> 
+                    <div class="insightsSec_content" data-aos="fade-up"> 
                         <div class="tab-content">
                             <div class="tab-pane active" id="blogall">
                                 <div class="post_cardList">
@@ -139,7 +139,11 @@ function render_post_card($post_id) {
                                                 render_post_card(get_the_ID());
                                             endwhile; 
                                             wp_reset_postdata();
-                                        endif; ?>
+                                        else : ?>
+                                            <div class="col-12">
+                                                <p>No content found.</p>
+                                            </div>
+                                        <?php endif; ?>
                                     </div>
                                 </div>
                             </div>
@@ -158,7 +162,11 @@ function render_post_card($post_id) {
                                                 render_post_card(get_the_ID());
                                             endwhile; 
                                             wp_reset_postdata();
-                                        endif; ?>
+                                        else : ?>
+                                            <div class="col-12">
+                                                <p>No content found.</p>
+                                            </div>
+                                        <?php endif; ?>
                                     </div>
                                 </div>
                             </div>
@@ -177,7 +185,11 @@ function render_post_card($post_id) {
                                                 render_post_card(get_the_ID());
                                             endwhile; 
                                             wp_reset_postdata();
-                                        endif; ?>
+                                        else : ?>
+                                            <div class="col-12">
+                                                <p>No content found.</p>
+                                            </div>
+                                        <?php endif; ?>
                                     </div>
                                 </div>
                             </div>
@@ -186,17 +198,21 @@ function render_post_card($post_id) {
                                     <div class="row"> 
                                         <?php 
                                         $news_query = new WP_Query(array(
-                                            'category_name' => 'news',
+                                            'category_name' => 'in-the-news',
                                             'posts_per_page' => 10,
                                             'post__not_in' => array($featured_post_id), // Exclude the featured post
-                                        ));
-
+                                        )); 
+                                        
                                         if ($news_query->have_posts()) : 
                                             while ($news_query->have_posts()) : $news_query->the_post();
                                                 render_post_card(get_the_ID());
                                             endwhile; 
                                             wp_reset_postdata();
-                                        endif; ?>
+                                        else : ?>
+                                            <div class="col-12">
+                                                <p>No content found.</p>
+                                            </div>
+                                        <?php endif; ?>
                                     </div>
                                 </div>
                             </div>
