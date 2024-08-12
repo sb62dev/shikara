@@ -131,7 +131,7 @@ function render_post_card($post_id) {
                                         $all_posts_query = new WP_Query(array(
                                             'post_type' => 'post',
                                             'posts_per_page' => 10,
-                                            'post__not_in' => array($featured_post_id), // Exclude the featured post
+                                            //'post__not_in' => array($featured_post_id), // Exclude the featured post
                                         ));
 
                                         if ($all_posts_query->have_posts()) : 
@@ -154,7 +154,7 @@ function render_post_card($post_id) {
                                         $insights_query = new WP_Query(array(
                                             'category_name' => 'insights',
                                             'posts_per_page' => 10,
-                                            'post__not_in' => array($featured_post_id), // Exclude the featured post
+                                            //'post__not_in' => array($featured_post_id), // Exclude the featured post
                                         ));
 
                                         if ($insights_query->have_posts()) : 
@@ -177,7 +177,7 @@ function render_post_card($post_id) {
                                         $press_query = new WP_Query(array(
                                             'category_name' => 'press-release',
                                             'posts_per_page' => 10,
-                                            'post__not_in' => array($featured_post_id), // Exclude the featured post
+                                            //'post__not_in' => array($featured_post_id), // Exclude the featured post
                                         ));
 
                                         if ($press_query->have_posts()) : 
@@ -200,7 +200,7 @@ function render_post_card($post_id) {
                                         $news_query = new WP_Query(array(
                                             'category_name' => 'in-the-news',
                                             'posts_per_page' => 10,
-                                            'post__not_in' => array($featured_post_id), // Exclude the featured post
+                                            //'post__not_in' => array($featured_post_id), // Exclude the featured post
                                         )); 
                                         
                                         if ($news_query->have_posts()) : 
