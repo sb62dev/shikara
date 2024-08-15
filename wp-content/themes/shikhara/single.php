@@ -23,7 +23,7 @@ get_header(); ?>
 
 				<section class="innerBanner">
 					<div class="container">
-						<div class="innerBanner_wrap" data-aos="fade-up"> 
+						<div class="innerBanner_wrap"> 
 							<div class="banner_bredcrumb">
 								<ul> 
 									<li> 

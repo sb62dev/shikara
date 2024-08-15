@@ -1765,24 +1765,43 @@ div.wpforms-container-full .wpforms-confirmation-container-full, div[submit-succ
     margin: 30px 0;
 }
 .blog_photo_wrap .blog_photo_btmTxt {
-    font-size: 13px;
-    margin-top: 7px;
+    font-size: 12px;
+    margin-top: 6px;
     font-style: italic;
 }
-.blog_disclaimer {
-    margin-top: 75px;
+.singleContentWrap .blog_disclaimer {
+    margin-top: 180px;
     color: #616368;
     font-size: 13px;
 }
-.blog_disclaimer h4 {
-    font-size: 15px;
+.singleContentWrap .blog_disclaimer h4 {
+    font-size: 14px;
     color: #616368;
+    text-transform: uppercase;
 }
-.blog_disclaimer p {
+.singleContentWrap .blog_disclaimer p {
     margin-bottom: 12px;
+}
+.singleContentWrap .blog_disclaimer .blog_sources_txt {
+    margin-bottom: 55px;
+}
+.singleContentWrap .blog_disclaimer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.singleContentWrap .blog_disclaimer ul li {
+    margin-bottom: 2px;
+}
+.singleContentWrap .blog_disclaimer ul li sup {
+    margin-right: 2px;
 }
 .singleContentWrap h4.greenTxt {
     color: #47AD96;
+    font-weight: 400;
+    font-family: "Source Serif 4", serif;
+    font-size: 14px;
+    margin: 25px 0 15px;
 }
 .singleContentWrap ul, .singleContentWrap ol {
     margin: 25px 0;

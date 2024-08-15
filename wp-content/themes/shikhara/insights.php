@@ -20,6 +20,19 @@ if ($featured_query->have_posts()) :
     wp_reset_postdata();
 endif;
 
+function custom_excerpt($post_id, $char_limit) {
+    $excerpt = get_the_excerpt($post_id);
+    
+    // Check if the excerpt length is greater than or equal to the character limit
+    if (strlen($excerpt) > $char_limit) {
+        $excerpt = substr($excerpt, 0, $char_limit) . '...';
+    } elseif (strlen($excerpt) == $char_limit) {
+        $excerpt .= '...';
+    }
+
+    return $excerpt;
+}
+
 function render_post_card($post_id) {
     setup_postdata($post_id);
     ?>
@@ -40,7 +53,7 @@ function render_post_card($post_id) {
                     ?>
                 </div>
                 <h4><?php echo get_the_title($post_id); ?></h4>
-                <div class="insight_para"><?php echo get_the_excerpt($post_id); ?></div>
+                <div class="insight_para"><?php echo custom_excerpt($post_id, 128); ?></div>
                 <div class="insight_date"><?php echo get_the_date('', $post_id); ?></div>
             </div>
         </a>
@@ -89,7 +102,7 @@ function render_post_card($post_id) {
                                         ?>
                                     </div>
                                     <h4><?php echo get_the_title($featured_post_id); ?></h4>
-                                    <div class="insight_para insight_para_block"><?php echo get_the_excerpt($featured_post_id); ?></div> 
+                                    <div class="insight_para insight_para_block"><?php echo custom_excerpt($featured_post_id, 170); ?></div> 
                                     <div class="insight_date"><?php echo get_the_date('', $featured_post_id); ?></div>
                                 </div>
                             </div> 
