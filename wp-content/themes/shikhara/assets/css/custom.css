@@ -1605,7 +1605,7 @@ div.wpforms-container-full .wpforms-confirmation-container-full, div[submit-succ
 .post_card .insight_date, .singleIngsightsPage .insight_date {
     font-size: 11px;
     margin-top: 15px;
-    color: #28283c;
+    color: #73757b;
 }
 .post_card .insight_para {
     color: #28283c;
@@ -1756,13 +1756,13 @@ div.wpforms-container-full .wpforms-confirmation-container-full, div[submit-succ
 }
 .singleContentWrap h4 {
     font-size: 20px;
-    margin: 30px 0 10px;
+    margin: 40px 0 5px;
 }
 .singleContentWrap p {
-    margin-bottom: 20px;
+    margin-bottom: 13px;
 }
 .blog_photo_wrap {
-    margin: 30px 0;
+    margin: 40px 0;
 }
 .blog_photo_wrap .blog_photo_btmTxt {
     font-size: 12px;
@@ -1771,8 +1771,8 @@ div.wpforms-container-full .wpforms-confirmation-container-full, div[submit-succ
 }
 .singleContentWrap .blog_disclaimer {
     margin-top: 180px;
-    color: #616368;
-    font-size: 13px;
+    color: #73757b;
+    font-size: 12px;
 }
 .singleContentWrap .blog_disclaimer h4 {
     font-size: 14px;
@@ -1780,7 +1780,7 @@ div.wpforms-container-full .wpforms-confirmation-container-full, div[submit-succ
     text-transform: uppercase;
 }
 .singleContentWrap .blog_disclaimer p {
-    margin-bottom: 12px;
+    margin-bottom: 12px; 
 }
 .singleContentWrap .blog_disclaimer .blog_sources_txt {
     margin-bottom: 55px;
@@ -1799,7 +1799,7 @@ div.wpforms-container-full .wpforms-confirmation-container-full, div[submit-succ
 .singleContentWrap h4.greenTxt {
     color: #47AD96;
     font-weight: 400;
-    font-family: "Source Serif 4", serif;
+    font-family: 'Titillium-semiBold';
     font-size: 14px;
     margin: 25px 0 15px;
 }
