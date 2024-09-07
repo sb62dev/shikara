@@ -296,6 +296,9 @@ p {
 .innerBanner_wrap h2, .innerBanner_wrap h1 {
     font-size: 40px;
 }
+.singleInsight .featured-image img { 
+    height: 400px; 
+}
     
 }
 
@@ -1046,6 +1049,9 @@ html, body, .coming_soon_wrapper{
 .insightsSec_tabs ul li a {
     font-size: 12px;
 }
+.singleInsight .featured-image img { 
+    height: 210px; 
+}
     
 }  
 
@@ -1056,6 +1062,18 @@ html, body, .coming_soon_wrapper{
 }
 .teamPage .innerBanner {
     background-size: 120% !important;
+}
+.singleInsight .featured-image img {
+    height: 185px;
+}
+.page-template-insights .post_card .post_card_img img {
+    height: 175px;
+}
+.insightsSec_tabs ul li a {
+    font-size: 11px;
+}
+.insightsSec_tabs ul li + li {
+    margin-left: 10px;
 }
      
 }
