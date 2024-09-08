@@ -86,6 +86,20 @@ jQuery(document).ready(function () {
             });
         }
     });
+    
+    jQuery(".scrollId").on('click', function (event) { 
+        if (this.hash !== "") { 
+            event.preventDefault(); 
+            var hash = this.hash; 
+            jQuery('html, body').animate({
+                scrollTop: jQuery(hash).offset().top - 180 // Adjust the offset by -200px
+            }, 800, function () { 
+                // Use history.pushState to update the URL without scrolling
+                history.pushState(null, null, hash);
+            });
+        }
+    });
+
 
     jQuery(window).scroll(function () {
         var windscroll = jQuery(window).scrollTop();
