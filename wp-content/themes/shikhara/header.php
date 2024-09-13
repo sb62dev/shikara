@@ -4,11 +4,11 @@
  */
 
  
-$protected_pages = array(561, 565, 569, 592, 595, 599); 
-
-if (in_array(get_the_ID(), $protected_pages)) {
-    password_protect_page(get_the_ID(), 'shikhara2024'); 
-}  
+//$protected_pages = array(561, 565, 569, 592, 595, 599); 
+//
+//if (in_array(get_the_ID(), $protected_pages)) {
+//    password_protect_page(get_the_ID(), 'shikhara2024'); 
+//}  
 
 ?>
 

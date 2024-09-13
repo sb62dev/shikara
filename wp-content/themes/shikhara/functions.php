@@ -737,3 +737,19 @@ function add_x_robots_tag_header() {
     }
 }
 add_action('send_headers', 'add_x_robots_tag_header');
+
+
+function add_x_robots_tag_header_folder() {
+    // Get the current requested URI
+    $request_uri = $_SERVER['REQUEST_URI'];
+    
+    // Specify the folder where your PDFs are stored (relative to the root)
+    $target_folder = '/shikhara-assets/';
+    
+    // Check if the request is for a PDF file in the specified folder
+    if (strpos($request_uri, $target_folder) !== false && strpos($request_uri, '.pdf') !== false) {
+        // Apply the X-Robots-Tag header for noindex, nofollow
+        header('X-Robots-Tag: noindex, nofollow', true);
+    }
+}
+add_action('send_headers', 'add_x_robots_tag_header_folder');
