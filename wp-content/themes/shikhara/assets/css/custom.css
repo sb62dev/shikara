@@ -472,10 +472,10 @@ header.Sticky-fixed .logo .logotxt {
     right: 0 !important;
 } 
 .main-navigation ul > li > a {
-    font-size: 12px;
+    font-size: 11px;
     color: #28283c;
     display: block;
-    padding: 6px 20px;
+    padding: 6px 28px;
     text-align: left;
     font-weight: 600;
     font-family: 'Titillium-semiBold';

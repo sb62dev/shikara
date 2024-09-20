@@ -753,3 +753,16 @@ function add_x_robots_tag_header_folder() {
     }
 }
 add_action('send_headers', 'add_x_robots_tag_header_folder');
+
+/**
+ * Filters form notification email footer content.
+ *
+ * @link https://wpforms.com/developers/how-to-remove-or-change-email-notification-footer-text/
+ */
+ 
+function wpf_dev_remove_email_footer_text( $footer ) {
+    $footer = '';
+    return $footer;
+}
+ 
+add_filter( 'wpforms_email_footer_text', 'wpf_dev_remove_email_footer_text', 30, 1 );
