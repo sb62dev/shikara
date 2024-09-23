@@ -143,7 +143,7 @@ function render_post_card($post_id) {
                                         <?php 
                                         $all_posts_query = new WP_Query(array(
                                             'post_type' => 'post',
-                                            'posts_per_page' => 10,
+                                            'posts_per_page' => -1,
                                             //'post__not_in' => array($featured_post_id), // Exclude the featured post
                                         ));
 
@@ -166,7 +166,7 @@ function render_post_card($post_id) {
                                         <?php 
                                         $insights_query = new WP_Query(array(
                                             'category_name' => 'insights',
-                                            'posts_per_page' => 10,
+                                            'posts_per_page' => -1,
                                             //'post__not_in' => array($featured_post_id), // Exclude the featured post
                                         ));
 
@@ -189,7 +189,7 @@ function render_post_card($post_id) {
                                         <?php 
                                         $press_query = new WP_Query(array(
                                             'category_name' => 'press-release',
-                                            'posts_per_page' => 10,
+                                            'posts_per_page' => -1,
                                             //'post__not_in' => array($featured_post_id), // Exclude the featured post
                                         ));
 
@@ -212,7 +212,7 @@ function render_post_card($post_id) {
                                         <?php 
                                         $news_query = new WP_Query(array(
                                             'category_name' => 'in-the-news',
-                                            'posts_per_page' => 10,
+                                            'posts_per_page' => -1,
                                             //'post__not_in' => array($featured_post_id), // Exclude the featured post
                                         )); 
                                         
