@@ -1821,3 +1821,6 @@ div.wpforms-container-full .wpforms-confirmation-container-full, div[submit-succ
     color: #46ad96;
     text-decoration: none;
 }
+.singleInsight .singleContentWrap p a {
+    color: #46ad96;
+}
