@@ -766,3 +766,8 @@ function wpf_dev_remove_email_footer_text( $footer ) {
 }
  
 add_filter( 'wpforms_email_footer_text', 'wpf_dev_remove_email_footer_text', 30, 1 );
+
+function include_pdf_uploader_functions() {
+    include_once get_template_directory() . '/pdf-uploader-functions.php'; // Adjust the path if necessary
+}
+add_action('init', 'include_pdf_uploader_functions');
