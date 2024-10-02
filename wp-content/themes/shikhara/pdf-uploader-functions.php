@@ -15,18 +15,22 @@ add_action('init', 'custom_add_user_role');
 
 // Custom upload directory for PDF uploads
 function custom_upload_dir($upload) {
-    $user = wp_get_current_user();
-    if (in_array('pdf_uploader', (array) $user->roles)) {
-        $upload['subdir'] = ''; 
-        $upload['path'] = ABSPATH . 'shikhara-assets';
-        $upload['url'] = home_url('/shikhara-assets');
+    if (is_admin()) { // Apply only in the admin area
+        $user = wp_get_current_user();
+        if (in_array('pdf_uploader', (array) $user->roles)) {
+            // Custom directory settings for PDF uploads by 'pdf_uploader'
+            $upload['subdir'] = ''; 
+            $upload['path'] = ABSPATH . 'shikhara-assets';
+            $upload['url'] = home_url('/shikhara-assets');
 
-        if (!file_exists($upload['path'])) {
-            mkdir($upload['path'], 0755, true);
+            // Ensure the directory exists
+            if (!file_exists($upload['path'])) {
+                mkdir($upload['path'], 0755, true);
+            }
+
+            $upload['basedir'] = ABSPATH . 'shikhara-assets';
+            $upload['baseurl'] = home_url('/shikhara-assets');
         }
-        
-        $upload['basedir'] = ABSPATH . 'shikhara-assets';
-        $upload['baseurl'] = home_url('/shikhara-assets'); 
     }
     return $upload;
 }
@@ -159,20 +163,13 @@ function custom_logout_page() {
         }, 5000);
     </script>';
     exit; // Ensure no further processing
-}  
+}   
 
-function enqueue_custom_admin_bar_script_pdf() {
-    if (is_user_logged_in() && current_user_can('pdf_uploader')) {
-        // Inline JavaScript to hide the admin bar
-        $script = "
-            document.addEventListener('DOMContentLoaded', function() {
-                const adminBar = document.getElementById('wpadminbar');
-                if (adminBar) {
-                    adminBar.style.display = 'none'; // Hide the admin bar
-                }
-            });
-        ";
-        wp_add_inline_script('jquery-core', $script); // Add the inline script after jQuery
+// Disable admin bar for 'pdf_uploader' role on the frontend
+function disable_admin_bar_for_pdf_uploader($show_admin_bar) {
+    if (current_user_can('pdf_uploader')) {
+        return false;
     }
+    return $show_admin_bar; 
 }
-add_action('wp_enqueue_scripts', 'enqueue_custom_admin_bar_script_pdf'); 
+add_filter('show_admin_bar', 'disable_admin_bar_for_pdf_uploader');
