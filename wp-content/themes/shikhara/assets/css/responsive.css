@@ -181,6 +181,12 @@ p {
 .ftrMenu-list li:nth-child( even ) {
     margin-left: 14%;
 }
+.home_abt_inner .home_abt_btm .about_feature_icon {
+    margin-left: -55px;
+}
+.home_abt_inner .home_abt_btm > .row {
+    align-items: center;
+}
     
 }    
 
