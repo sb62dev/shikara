@@ -48,6 +48,14 @@
 
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/js/jquery.min.js"></script>
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LMHJ10BE3L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LMHJ10BE3L');
+</script>
+
 
 </head>
 
